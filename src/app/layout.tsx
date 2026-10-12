@@ -30,7 +30,7 @@ export default function RootLayout({
       lang="en"
       className={`${plusJakartaSans.variable} ${syne.variable} scroll-smooth antialiased`}
     >
-      <body className="min-h-full flex flex-col font-sans bg-[#0247FE] text-slate-900 selection:bg-[#CCFF00] selection:text-black">
+      <body className="min-h-full flex flex-col font-sans bg-[#E82E78] text-slate-900 selection:bg-[#CCFF00] selection:text-black">
         {children}
       </body>
     </html>

@@ -31,17 +31,17 @@ export default function ShowcaseCards({
 
             {/* Bottom Graphic element matching image */}
             <div className="mt-8 flex items-center gap-3">
-              {/* Blue Speech-bubble avatar badge */}
-              <div className="relative bg-[#0247FE] text-white p-2.5 rounded-2xl flex items-center gap-2 shadow-md">
-                <div className="w-8 h-8 rounded-full bg-amber-400 overflow-hidden border border-white/60 flex items-center justify-center text-xs font-black text-black">
+              {/* Pink Speech-bubble avatar badge */}
+              <div className="relative bg-[#E82E78] text-white p-2.5 rounded-2xl flex items-center gap-2 shadow-md">
+                <div className="w-8 h-8 rounded-full bg-white overflow-hidden border border-white/60 flex items-center justify-center text-xs font-black text-[#E82E78]">
                   IEEE
                 </div>
                 <div className="text-[10px] leading-tight">
                   <p className="font-extrabold text-white">sjcet.sb</p>
-                  <p className="text-white/70 text-[9px]">ComSoc</p>
+                  <p className="text-white/80 text-[9px]">ComSoc</p>
                 </div>
                 {/* Speech tail */}
-                <div className="absolute -bottom-1 left-3 w-2 h-2 bg-[#0247FE] rotate-45" />
+                <div className="absolute -bottom-1 left-3 w-2 h-2 bg-[#E82E78] rotate-45" />
               </div>
 
               {/* Neon Lime Pill Badge */}
@@ -91,7 +91,7 @@ export default function ShowcaseCards({
 
             {/* Bottom Graphic element matching image */}
             <div className="mt-8 flex flex-col items-center gap-2">
-              <div className="w-full flex items-center justify-between bg-[#0247FE] text-white px-4 py-2 rounded-2xl shadow-md">
+              <div className="w-full flex items-center justify-between bg-[#E82E78] text-white px-4 py-2 rounded-2xl shadow-md">
                 <span className="font-mono font-bold text-xs sm:text-sm">
                   STLC 2026 TRACKS
                 </span>
@@ -103,7 +103,7 @@ export default function ShowcaseCards({
               {/* Lime Green Button with Doodle Arrow */}
               <button
                 onClick={onRegisterClick}
-                className="w-10 h-10 rounded-full bg-[#CCFF00] border-2 border-black flex items-center justify-center hover:scale-110 active:scale-95 transition-transform shadow-md"
+                className="w-10 h-10 rounded-full bg-[#CCFF00] hover:bg-[#bde800] border-2 border-black flex items-center justify-center hover:scale-110 active:scale-95 transition-transform shadow-md"
                 aria-label="View Tracks"
               >
                 <svg

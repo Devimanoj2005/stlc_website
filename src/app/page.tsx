@@ -18,7 +18,7 @@ export default function Home() {
   const [isExpoOpen, setIsExpoOpen] = useState(false);
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#0247FE] selection:bg-[#CCFF00] selection:text-black">
+    <div className="min-h-screen flex flex-col bg-[#E82E78] selection:bg-[#CCFF00] selection:text-black">
       {/* Top Navbar */}
       <Navbar onRegisterClick={() => setIsRegisterOpen(true)} />
 

@@ -96,7 +96,7 @@ export default function Hero({ onRegisterClick }: HeroProps) {
                   <rect x="25" y="16" width="7" height="6" fill="#06B6D4" />
                   <rect x="23" y="18" width="2" height="2" fill="#0F172A" />
                   <rect x="18" y="24" width="12" height="2" fill="#0F172A" />
-                  <rect x="10" y="30" width="28" height="14" rx="4" fill="#3B82F6" />
+                  <rect x="10" y="30" width="28" height="14" rx="4" fill="#E82E78" />
                 </svg>
               </div>
               <span className="text-white font-extrabold text-xs md:text-sm tracking-tight drop-shadow-sm">

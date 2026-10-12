@@ -109,7 +109,7 @@ export default function WhatAwaitsSection({
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 md:mb-16">
           <div>
-            <div className="inline-flex items-center gap-2 bg-[#0247FE] text-white px-3.5 py-1 rounded-full text-xs font-black uppercase tracking-wider mb-4">
+            <div className="inline-flex items-center gap-2 bg-[#E82E78] text-white px-3.5 py-1 rounded-full text-xs font-black uppercase tracking-wider mb-4">
               <span>03 • EXPLORE THE EXPERIENCE</span>
             </div>
             <h2 className="font-heading font-black text-3xl sm:text-5xl text-slate-900 tracking-tight uppercase leading-tight">
@@ -130,7 +130,7 @@ export default function WhatAwaitsSection({
             <div
               key={exp.id}
               className={`rounded-3xl p-6 sm:p-7 border transition-all duration-300 hover:shadow-xl flex flex-col justify-between group ${exp.highlight
-                ? "bg-[#0247FE] text-white border-transparent"
+                ? "bg-[#E82E78] text-white border-transparent"
                 : exp.isExpo
                   ? "bg-[#CCFF00] text-black border-black/15 shadow-md"
                   : "bg-[#F8FAFC] text-slate-900 border-slate-200/80 hover:border-slate-300"
@@ -143,7 +143,7 @@ export default function WhatAwaitsSection({
                       ? "bg-white/15 text-[#CCFF00]"
                       : exp.isExpo
                         ? "bg-black text-[#CCFF00]"
-                        : "bg-[#0247FE]/10 text-[#0247FE]"
+                        : "bg-[#E82E78]/10 text-[#E82E78]"
                       }`}
                   >
                     {exp.icon}

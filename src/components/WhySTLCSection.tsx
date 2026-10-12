@@ -11,7 +11,7 @@ export default function WhySTLCSection({ onRegisterClick }: WhySTLCSectionProps)
       description:
         "Direct access to recognized industry veterans, IEEE ComSoc senior researchers, and distinguished keynote speakers.",
       icon: "🎯",
-      color: "border-l-4 border-l-[#0247FE]",
+      color: "border-l-4 border-l-[#E82E78]",
     },
     {
       title: "Build Practical Skills",
@@ -32,7 +32,7 @@ export default function WhySTLCSection({ onRegisterClick }: WhySTLCSectionProps)
       description:
         "Gain authentic visibility into job market dynamics, industry expectations, and transition blueprints for young engineers.",
       icon: "🚀",
-      color: "border-l-4 border-l-[#0247FE]",
+      color: "border-l-4 border-l-[#E82E78]",
     },
     {
       title: "Connect and Collaborate",
@@ -56,7 +56,7 @@ export default function WhySTLCSection({ onRegisterClick }: WhySTLCSectionProps)
 
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-14 md:mb-18">
-          <div className="inline-flex items-center gap-2 bg-[#0247FE]/10 text-[#0247FE] px-3.5 py-1 rounded-full text-xs font-black uppercase tracking-wider mb-4">
+          <div className="inline-flex items-center gap-2 bg-[#E82E78]/10 text-[#E82E78] px-3.5 py-1 rounded-full text-xs font-black uppercase tracking-wider mb-4">
             <span>05 • YOUR NEXT STEP STARTS HERE</span>
           </div>
           <h2 className="font-heading font-black text-3xl sm:text-5xl text-slate-900 tracking-tight uppercase leading-tight">
@@ -90,7 +90,7 @@ export default function WhySTLCSection({ onRegisterClick }: WhySTLCSectionProps)
               </div>
 
               <div className="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
-                <span className="text-[11px] font-bold text-[#0247FE] uppercase tracking-wider">
+                <span className="text-[11px] font-bold text-[#E82E78] uppercase tracking-wider">
                   STLC Pillar
                 </span>
                 <span className="w-2 h-2 rounded-full bg-[#CCFF00] border border-black/20" />
@@ -111,7 +111,7 @@ export default function WhySTLCSection({ onRegisterClick }: WhySTLCSectionProps)
           </div>
           <button
             onClick={onRegisterClick}
-            className="bg-[#0247FE] hover:bg-blue-700 text-white font-heading font-black px-8 py-3.5 rounded-full text-sm uppercase tracking-wider shadow-lg active:scale-95 transition-all duration-200 shrink-0"
+            className="bg-[#E82E78] hover:bg-[#c71f62] text-white font-heading font-black px-8 py-3.5 rounded-full text-sm uppercase tracking-wider shadow-lg active:scale-95 transition-all duration-200 shrink-0"
           >
             Claim Your Spot →
           </button>

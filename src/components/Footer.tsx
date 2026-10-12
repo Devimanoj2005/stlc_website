@@ -14,7 +14,7 @@ export default function Footer({ onRegisterClick }: FooterProps) {
       <div className="max-w-7xl mx-auto">
 
         {/* Top Footer Banner */}
-        <div className="bg-[#0247FE] rounded-3xl p-8 sm:p-10 mb-16 flex flex-col lg:flex-row items-center justify-between gap-8 shadow-2xl relative overflow-hidden">
+        <div className="bg-[#E82E78] rounded-3xl p-8 sm:p-10 mb-16 flex flex-col lg:flex-row items-center justify-between gap-8 shadow-2xl relative overflow-hidden">
           <div className="absolute inset-0 bg-grid-pattern opacity-20 pointer-events-none" />
 
           <div className="relative z-10 max-w-xl text-center lg:text-left">

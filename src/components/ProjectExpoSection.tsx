@@ -8,7 +8,7 @@ export default function ProjectExpoSection({
   onExploreExpoClick,
 }: ProjectExpoSectionProps) {
   return (
-    <section id="expo" className="w-full bg-[#0247FE] text-white py-16 md:py-24 px-4 sm:px-6 md:px-12 relative overflow-hidden">
+    <section id="expo" className="w-full bg-[#E82E78] text-white py-16 md:py-24 px-4 sm:px-6 md:px-12 relative overflow-hidden">
       {/* Background blueprint grid */}
       <div className="absolute inset-0 bg-grid-pattern opacity-25 pointer-events-none" />
 
@@ -65,7 +65,7 @@ export default function ProjectExpoSection({
               {/* Top Banner Tag */}
               <div className="flex items-center justify-between pb-4 border-b border-slate-100">
                 <div className="flex items-center gap-2">
-                  <span className="w-3 h-3 rounded-full bg-[#0247FE]" />
+                  <span className="w-3 h-3 rounded-full bg-[#E82E78]" />
                   <span className="font-heading font-extrabold text-sm uppercase tracking-tight">
                     Expo Highlights
                   </span>
@@ -78,7 +78,7 @@ export default function ProjectExpoSection({
               {/* Expo Feature Points */}
               <div className="py-6 space-y-4">
                 <div className="flex items-start gap-3">
-                  <div className="w-6 h-6 rounded-full bg-[#0247FE]/10 text-[#0247FE] flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">
+                  <div className="w-6 h-6 rounded-full bg-[#E82E78]/10 text-[#E82E78] flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">
                     ✓
                   </div>
                   <div>
@@ -92,7 +92,7 @@ export default function ProjectExpoSection({
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <div className="w-6 h-6 rounded-full bg-[#0247FE]/10 text-[#0247FE] flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">
+                  <div className="w-6 h-6 rounded-full bg-[#E82E78]/10 text-[#E82E78] flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">
                     ✓
                   </div>
                   <div>
@@ -106,7 +106,7 @@ export default function ProjectExpoSection({
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <div className="w-6 h-6 rounded-full bg-[#0247FE]/10 text-[#0247FE] flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">
+                  <div className="w-6 h-6 rounded-full bg-[#E82E78]/10 text-[#E82E78] flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">
                     ✓
                   </div>
                   <div>
@@ -130,7 +130,7 @@ export default function ProjectExpoSection({
                     SJCET Palai, Kerala
                   </div>
                 </div>
-                <div className="bg-[#0247FE] text-white text-[11px] font-bold px-3 py-1.5 rounded-full">
+                <div className="bg-[#E82E78] text-white text-[11px] font-bold px-3 py-1.5 rounded-full">
                   Submit Now
                 </div>
               </div>

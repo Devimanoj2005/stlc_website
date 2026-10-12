@@ -8,7 +8,7 @@ export default function ExperienceSection() {
       description:
         "Engage directly with industry leaders and researchers uncovering emerging paradigms in communications and computing.",
       number: "01",
-      accent: "bg-[#0247FE] text-white",
+      accent: "bg-[#E82E78] text-white",
       badge: "#DeepTech",
     },
     {
@@ -80,7 +80,7 @@ export default function ExperienceSection() {
                 <h3 className="font-heading font-black text-2xl sm:text-3xl text-slate-900 tracking-tight uppercase">
                   {item.title}
                 </h3>
-                <h4 className="text-xs font-bold text-[#0247FE] uppercase tracking-wider mt-1">
+                <h4 className="text-xs font-bold text-[#E82E78] uppercase tracking-wider mt-1">
                   {item.tagline}
                 </h4>
 
@@ -90,7 +90,7 @@ export default function ExperienceSection() {
               </div>
 
               <div className="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
-                <span className="text-xs font-extrabold text-slate-900 group-hover:text-[#0247FE] transition-colors">
+                <span className="text-xs font-extrabold text-slate-900 group-hover:text-[#E82E78] transition-colors">
                   Explore Pillar
                 </span>
                 <div className="w-7 h-7 rounded-full bg-slate-100 group-hover:bg-[#CCFF00] flex items-center justify-center transition-colors">

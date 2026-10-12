@@ -28,7 +28,7 @@ export default function Navbar({ onRegisterClick }: NavbarProps) {
             <div className="absolute -bottom-1 left-2 w-2 h-2 bg-white rotate-45" />
           </div>
 
-          {/* Neon Lime Bubble "COMSOC / STLC" */}
+          {/* Neon Lime Bubble "STLC / 2026" */}
           <div className="relative bg-[#CCFF00] border-2 border-black text-black font-extrabold px-3 py-1 rounded-full text-xs md:text-sm tracking-wider uppercase shadow-md flex items-center gap-1 group-hover:scale-105 transition-transform">
             <span className="font-heading font-black">STLC</span>
             <span className="text-[10px] md:text-xs bg-black text-[#CCFF00] px-1.5 py-0.2 rounded-md font-bold">
@@ -84,7 +84,7 @@ export default function Navbar({ onRegisterClick }: NavbarProps) {
           <button
             onClick={onRegisterClick}
             type="button"
-            className="hidden sm:inline-flex items-center justify-center border border-white text-white hover:bg-white hover:text-[#0247FE] px-5 py-2 rounded-full text-xs md:text-sm font-bold tracking-tight transition-all duration-200 shadow-sm active:scale-95"
+            className="hidden sm:inline-flex items-center justify-center border border-white text-white hover:bg-white hover:text-[#E82E78] px-5 py-2 rounded-full text-xs md:text-sm font-bold tracking-tight transition-all duration-200 shadow-sm active:scale-95"
           >
             Register Now
           </button>
@@ -174,7 +174,7 @@ export default function Navbar({ onRegisterClick }: NavbarProps) {
                 setMobileMenuOpen(false);
                 onRegisterClick();
               }}
-              className="w-full bg-[#CCFF00] text-black font-extrabold py-2.5 rounded-full text-sm text-center shadow-md active:scale-95 transition-transform"
+              className="w-full bg-[#CCFF00] hover:bg-[#e5ff66] text-black font-extrabold py-2.5 rounded-full text-sm text-center shadow-md active:scale-95 transition-transform"
             >
               Register Now
             </button>

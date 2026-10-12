@@ -71,7 +71,7 @@ export default function Modals({
                 <p className="text-sm text-slate-600 max-w-sm mx-auto">
                   Thank you, <strong>{formData.name || "Innovator"}</strong>! We&apos;ve logged your pre-registration for STLC 2026. Details and confirmation have been queued for <strong>{formData.email}</strong>.
                 </p>
-                <div className="p-4 bg-[#0247FE] text-white rounded-2xl text-xs font-semibold">
+                <div className="p-4 bg-[#E82E78] text-white rounded-2xl text-xs font-semibold">
                   Two-Day Residential Conference • SJCET Palai
                 </div>
                 <button
@@ -86,7 +86,7 @@ export default function Modals({
               </div>
             ) : (
               <div>
-                <div className="inline-flex items-center gap-1.5 bg-[#0247FE]/10 text-[#0247FE] px-3 py-1 rounded-full text-xs font-black uppercase mb-3">
+                <div className="inline-flex items-center gap-1.5 bg-[#E82E78]/10 text-[#E82E78] px-3 py-1 rounded-full text-xs font-black uppercase mb-3">
                   STLC 2026 • Registration
                 </div>
                 <h3 className="font-heading font-black text-2xl sm:text-3xl text-slate-900 uppercase tracking-tight">
@@ -102,7 +102,7 @@ export default function Modals({
                     type="button"
                     onClick={() => setTicketType("ieee-student")}
                     className={`p-3 rounded-2xl border text-left transition-all ${ticketType === "ieee-student"
-                      ? "border-[#0247FE] bg-[#0247FE]/5 text-[#0247FE] font-bold"
+                      ? "border-[#E82E78] bg-[#E82E78]/5 text-[#E82E78] font-bold"
                       : "border-slate-200 text-slate-700"
                       }`}
                   >
@@ -114,7 +114,7 @@ export default function Modals({
                     type="button"
                     onClick={() => setTicketType("non-ieee")}
                     className={`p-3 rounded-2xl border text-left transition-all ${ticketType === "non-ieee"
-                      ? "border-[#0247FE] bg-[#0247FE]/5 text-[#0247FE] font-bold"
+                      ? "border-[#E82E78] bg-[#E82E78]/5 text-[#E82E78] font-bold"
                       : "border-slate-200 text-slate-700"
                       }`}
                   >
@@ -136,7 +136,7 @@ export default function Modals({
                       onChange={(e) =>
                         setFormData({ ...formData, name: e.target.value })
                       }
-                      className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-[#0247FE] focus:ring-1 focus:ring-[#0247FE]"
+                      className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-[#E82E78] focus:ring-1 focus:ring-[#E82E78]"
                     />
                   </div>
 
@@ -152,7 +152,7 @@ export default function Modals({
                       onChange={(e) =>
                         setFormData({ ...formData, email: e.target.value })
                       }
-                      className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-[#0247FE] focus:ring-1 focus:ring-[#0247FE]"
+                      className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-[#E82E78] focus:ring-1 focus:ring-[#E82E78]"
                     />
                   </div>
 
@@ -168,7 +168,7 @@ export default function Modals({
                       onChange={(e) =>
                         setFormData({ ...formData, college: e.target.value })
                       }
-                      className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-[#0247FE] focus:ring-1 focus:ring-[#0247FE]"
+                      className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-[#E82E78] focus:ring-1 focus:ring-[#E82E78]"
                     />
                   </div>
 
@@ -184,7 +184,7 @@ export default function Modals({
                         onChange={(e) =>
                           setFormData({ ...formData, ieeeId: e.target.value })
                         }
-                        className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-[#0247FE] focus:ring-1 focus:ring-[#0247FE]"
+                        className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-[#E82E78] focus:ring-1 focus:ring-[#E82E78]"
                       />
                     </div>
                   )}
@@ -220,7 +220,7 @@ export default function Modals({
 
             {expoSubmitted ? (
               <div className="text-center py-8 space-y-4">
-                <div className="w-16 h-16 rounded-full bg-[#0247FE] text-white flex items-center justify-center mx-auto text-2xl font-black">
+                <div className="w-16 h-16 rounded-full bg-[#E82E78] text-white border-2 border-black flex items-center justify-center mx-auto text-2xl font-black">
                   ✓
                 </div>
                 <h3 className="font-heading font-black text-2xl text-slate-900 uppercase">
@@ -267,7 +267,7 @@ export default function Modals({
                       onChange={(e) =>
                         setExpoForm({ ...expoForm, teamLead: e.target.value })
                       }
-                      className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-[#0247FE] focus:ring-1 focus:ring-[#0247FE]"
+                      className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-[#E82E78] focus:ring-1 focus:ring-[#E82E78]"
                     />
                   </div>
 
@@ -283,7 +283,7 @@ export default function Modals({
                       onChange={(e) =>
                         setExpoForm({ ...expoForm, email: e.target.value })
                       }
-                      className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-[#0247FE] focus:ring-1 focus:ring-[#0247FE]"
+                      className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-[#E82E78] focus:ring-1 focus:ring-[#E82E78]"
                     />
                   </div>
 
@@ -299,7 +299,7 @@ export default function Modals({
                       onChange={(e) =>
                         setExpoForm({ ...expoForm, projectTitle: e.target.value })
                       }
-                      className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-[#0247FE] focus:ring-1 focus:ring-[#0247FE]"
+                      className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-[#E82E78] focus:ring-1 focus:ring-[#E82E78]"
                     />
                   </div>
 
@@ -312,7 +312,7 @@ export default function Modals({
                       onChange={(e) =>
                         setExpoForm({ ...expoForm, category: e.target.value })
                       }
-                      className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-[#0247FE] focus:ring-1 focus:ring-[#0247FE]"
+                      className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-[#E82E78] focus:ring-1 focus:ring-[#E82E78]"
                     >
                       <option value="Hardware & IoT">Hardware & IoT</option>
                       <option value="Communications & Signal Processing">
@@ -330,7 +330,7 @@ export default function Modals({
 
                   <button
                     type="submit"
-                    className="w-full mt-2 bg-[#0247FE] hover:bg-blue-700 text-white font-heading font-black py-3 rounded-full text-sm uppercase tracking-wider shadow-md active:scale-95 transition-all"
+                    className="w-full mt-2 bg-[#E82E78] hover:bg-[#c71f62] text-white font-heading font-black py-3 rounded-full text-sm uppercase tracking-wider border-2 border-black shadow-md active:scale-95 transition-all"
                   >
                     Submit Project for Review →
                   </button>

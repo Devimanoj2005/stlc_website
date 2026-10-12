@@ -25,7 +25,7 @@ export default function OrganizersSection() {
           <div className="bg-[#F8FAFC] border-2 border-slate-200 hover:border-black rounded-3xl p-8 transition-all duration-300 hover:shadow-xl flex flex-col justify-between group">
             <div>
               <div className="flex items-center justify-between mb-6">
-                <span className="text-[11px] font-black uppercase tracking-wider bg-[#0247FE] text-white px-3 py-1 rounded-full">
+                <span className="text-[11px] font-black uppercase tracking-wider bg-[#E82E78] text-white px-3 py-1 rounded-full">
                   ORGANIZED BY
                 </span>
                 <span className="font-mono text-xs font-bold text-slate-400">
@@ -34,7 +34,7 @@ export default function OrganizersSection() {
               </div>
 
               <div className="w-16 h-16 rounded-2xl bg-white border border-slate-200 p-2 flex items-center justify-center mb-6 shadow-sm group-hover:scale-105 transition-transform">
-                <div className="font-heading font-black text-xl text-[#0247FE]">
+                <div className="font-heading font-black text-xl text-[#E82E78]">
                   SJCET
                 </div>
               </div>
@@ -42,7 +42,7 @@ export default function OrganizersSection() {
               <h3 className="font-heading font-black text-2xl text-slate-900 tracking-tight uppercase">
                 IEEE ComSoc SBC SJCET
               </h3>
-              <p className="text-xs font-bold text-[#0247FE] uppercase tracking-wider mt-1">
+              <p className="text-xs font-bold text-[#E82E78] uppercase tracking-wider mt-1">
                 St. Joseph&apos;s College of Engineering & Technology, Palai
               </p>
 
@@ -55,7 +55,7 @@ export default function OrganizersSection() {
               <span className="text-xs font-extrabold text-slate-700">
                 SBC Palai, Kerala
               </span>
-              <span className="text-xs font-bold text-[#0247FE] group-hover:underline">
+              <span className="text-xs font-bold text-[#E82E78] group-hover:underline">
                 Student Branch Chapter
               </span>
             </div>
@@ -95,7 +95,7 @@ export default function OrganizersSection() {
               <span className="text-xs font-extrabold text-slate-700">
                 Kerala Section
               </span>
-              <span className="text-xs font-bold text-[#0247FE] group-hover:underline">
+              <span className="text-xs font-bold text-[#E82E78] group-hover:underline">
                 Professional Network
               </span>
             </div>

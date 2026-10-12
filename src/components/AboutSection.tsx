@@ -8,7 +8,7 @@ export default function AboutSection() {
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 md:mb-16">
           <div className="max-w-2xl">
-            <div className="inline-flex items-center gap-2 bg-[#0247FE]/10 text-[#0247FE] px-3.5 py-1 rounded-full text-xs font-extrabold uppercase tracking-wider mb-4">
+            <div className="inline-flex items-center gap-2 bg-[#E82E78]/10 text-[#E82E78] px-3.5 py-1 rounded-full text-xs font-extrabold uppercase tracking-wider mb-4">
               <span>01 • ABOUT THE CONFERENCE</span>
             </div>
             <h2 className="font-heading font-black text-3xl sm:text-4xl md:text-5xl text-slate-900 tracking-tight leading-tight">
@@ -27,7 +27,7 @@ export default function AboutSection() {
           {/* Main Story Narrative */}
           <div className="lg:col-span-7 space-y-6 text-slate-700 text-base md:text-lg leading-relaxed">
             <p className="font-medium text-slate-900 text-lg md:text-xl leading-snug">
-              The <strong className="text-[#0247FE]">IEEE ComSoc Student Tech Leadership Conference (STLC) 2026</strong> is a two-day residential conference bringing together students and young professionals passionate about technology, innovation, and leadership.
+              The <strong className="text-[#E82E78]">IEEE ComSoc Student Tech Leadership Conference (STLC) 2026</strong> is a two-day residential conference bringing together students and young professionals passionate about technology, innovation, and leadership.
             </p>
             <p>
               Organized by the <strong className="text-slate-900">IEEE ComSoc Student Branch Chapter, SJCET</strong>, in association with the <strong className="text-slate-900">IEEE ComSoc Kerala Chapter</strong>, STLC 2026 offers a platform to explore emerging technologies, develop essential professional skills, and gain valuable industry insights.
@@ -53,7 +53,7 @@ export default function AboutSection() {
           </div>
 
           {/* Quick Metrics / Neo-Brutalist Visual Card */}
-          <div className="lg:col-span-5 bg-[#0247FE] text-white rounded-3xl p-6 sm:p-8 relative overflow-hidden shadow-xl">
+          <div className="lg:col-span-5 bg-[#E82E78] text-white rounded-3xl p-6 sm:p-8 relative overflow-hidden shadow-xl">
             {/* Subtle background grid */}
             <div className="absolute inset-0 bg-grid-pattern opacity-30 pointer-events-none" />
 
@@ -72,7 +72,7 @@ export default function AboutSection() {
                   <div className="text-3xl font-heading font-black text-[#CCFF00]">
                     2
                   </div>
-                  <div className="text-xs text-white/80 font-semibold mt-1">
+                  <div className="text-xs text-white/90 font-semibold mt-1">
                     Days Residential
                   </div>
                 </div>
@@ -81,7 +81,7 @@ export default function AboutSection() {
                   <div className="text-3xl font-heading font-black text-[#CCFF00]">
                     7+
                   </div>
-                  <div className="text-xs text-white/80 font-semibold mt-1">
+                  <div className="text-xs text-white/90 font-semibold mt-1">
                     Core Learning Tracks
                   </div>
                 </div>
@@ -90,7 +90,7 @@ export default function AboutSection() {
                   <div className="text-3xl font-heading font-black text-[#CCFF00]">
                     100+
                   </div>
-                  <div className="text-xs text-white/80 font-semibold mt-1">
+                  <div className="text-xs text-white/90 font-semibold mt-1">
                     Projects In Spotlight
                   </div>
                 </div>
@@ -99,7 +99,7 @@ export default function AboutSection() {
                   <div className="text-3xl font-heading font-black text-[#CCFF00]">
                     250+
                   </div>
-                  <div className="text-xs text-white/80 font-semibold mt-1">
+                  <div className="text-xs text-white/90 font-semibold mt-1">
                     Student & YP Leaders
                   </div>
                 </div>

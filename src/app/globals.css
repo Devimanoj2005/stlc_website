@@ -3,13 +3,16 @@
 @theme {
   --font-sans: var(--font-sans), system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --font-syne: var(--font-syne), 'Syne', system-ui, sans-serif;
-  --color-electric-blue: #0247fe;
+  --color-brand-pink: #e82e78;
+  --color-brand-pink-dark: #c71f62;
+  --color-brand-pink-light: #fce7f3;
+  --color-pinkish-white: #fff5f8;
   --color-neon-lime: #ccff00;
   --color-neon-lime-light: #e5ff66;
 }
 
 :root {
-  --background: #0247fe;
+  --background: #e82e78;
   --foreground: #ffffff;
 }
 
@@ -24,13 +27,13 @@ body {
 .bg-grid-pattern {
   background-size: 52px 52px;
   background-image:
-    linear-gradient(to right, rgba(255, 255, 255, 0.12) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.12) 1px, transparent 1px);
+    linear-gradient(to right, rgba(255, 255, 255, 0.14) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.14) 1px, transparent 1px);
 }
 
 .bg-grid-dots {
   background-size: 28px 28px;
-  background-image: radial-gradient(rgba(2, 71, 254, 0.15) 1.5px, transparent 0);
+  background-image: radial-gradient(rgba(232, 46, 120, 0.15) 1.5px, transparent 0);
 }
 
 /* Smooth continuous rotation */
