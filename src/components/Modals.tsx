@@ -62,7 +62,7 @@ export default function Modals({
 
             {registered ? (
               <div className="text-center py-8 space-y-4">
-                <div className="w-16 h-16 rounded-full bg-[#CCFF00] border-2 border-black flex items-center justify-center mx-auto text-2xl font-black">
+                <div className="w-16 h-16 rounded-full bg-[#E8C5A8] text-[#2B1408] border-2 border-[#2B1408] flex items-center justify-center mx-auto text-2xl font-black">
                   ✓
                 </div>
                 <h3 className="font-heading font-black text-2xl text-slate-900 uppercase">
@@ -71,7 +71,7 @@ export default function Modals({
                 <p className="text-sm text-slate-600 max-w-sm mx-auto">
                   Thank you, <strong>{formData.name || "Innovator"}</strong>! We&apos;ve logged your pre-registration for STLC 2026. Details and confirmation have been queued for <strong>{formData.email}</strong>.
                 </p>
-                <div className="p-4 bg-[#0247FE] text-white rounded-2xl text-xs font-semibold">
+                <div className="p-4 bg-[#B85D2A] text-white rounded-2xl text-xs font-semibold">
                   Two-Day Residential Conference • SJCET Palai
                 </div>
                 <button
@@ -79,14 +79,14 @@ export default function Modals({
                     setRegistered(false);
                     onCloseRegister();
                   }}
-                  className="bg-black text-[#CCFF00] font-black px-6 py-2.5 rounded-full text-xs uppercase"
+                  className="bg-[#2B1408] text-[#E8C5A8] font-black px-6 py-2.5 rounded-full text-xs uppercase"
                 >
                   Done
                 </button>
               </div>
             ) : (
               <div>
-                <div className="inline-flex items-center gap-1.5 bg-[#0247FE]/10 text-[#0247FE] px-3 py-1 rounded-full text-xs font-black uppercase mb-3">
+                <div className="inline-flex items-center gap-1.5 bg-[#B85D2A]/10 text-[#B85D2A] px-3 py-1 rounded-full text-xs font-black uppercase mb-3">
                   STLC 2026 • Registration
                 </div>
                 <h3 className="font-heading font-black text-2xl sm:text-3xl text-slate-900 uppercase tracking-tight">
@@ -102,7 +102,7 @@ export default function Modals({
                     type="button"
                     onClick={() => setTicketType("ieee-student")}
                     className={`p-3 rounded-2xl border text-left transition-all ${ticketType === "ieee-student"
-                      ? "border-[#0247FE] bg-[#0247FE]/5 text-[#0247FE] font-bold"
+                      ? "border-[#B85D2A] bg-[#B85D2A]/5 text-[#B85D2A] font-bold"
                       : "border-slate-200 text-slate-700"
                       }`}
                   >
@@ -114,7 +114,7 @@ export default function Modals({
                     type="button"
                     onClick={() => setTicketType("non-ieee")}
                     className={`p-3 rounded-2xl border text-left transition-all ${ticketType === "non-ieee"
-                      ? "border-[#0247FE] bg-[#0247FE]/5 text-[#0247FE] font-bold"
+                      ? "border-[#B85D2A] bg-[#B85D2A]/5 text-[#B85D2A] font-bold"
                       : "border-slate-200 text-slate-700"
                       }`}
                   >
@@ -136,7 +136,7 @@ export default function Modals({
                       onChange={(e) =>
                         setFormData({ ...formData, name: e.target.value })
                       }
-                      className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-[#0247FE] focus:ring-1 focus:ring-[#0247FE]"
+                      className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-[#B85D2A] focus:ring-1 focus:ring-[#B85D2A]"
                     />
                   </div>
 
@@ -152,7 +152,7 @@ export default function Modals({
                       onChange={(e) =>
                         setFormData({ ...formData, email: e.target.value })
                       }
-                      className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-[#0247FE] focus:ring-1 focus:ring-[#0247FE]"
+                      className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-[#B85D2A] focus:ring-1 focus:ring-[#B85D2A]"
                     />
                   </div>
 
@@ -168,7 +168,7 @@ export default function Modals({
                       onChange={(e) =>
                         setFormData({ ...formData, college: e.target.value })
                       }
-                      className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-[#0247FE] focus:ring-1 focus:ring-[#0247FE]"
+                      className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-[#B85D2A] focus:ring-1 focus:ring-[#B85D2A]"
                     />
                   </div>
 
@@ -184,14 +184,14 @@ export default function Modals({
                         onChange={(e) =>
                           setFormData({ ...formData, ieeeId: e.target.value })
                         }
-                        className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-[#0247FE] focus:ring-1 focus:ring-[#0247FE]"
+                        className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-[#B85D2A] focus:ring-1 focus:ring-[#B85D2A]"
                       />
                     </div>
                   )}
 
                   <button
                     type="submit"
-                    className="w-full mt-2 bg-[#CCFF00] hover:bg-[#bde800] text-black font-heading font-black py-3 rounded-full text-sm uppercase tracking-wider border-2 border-black shadow-md active:scale-95 transition-all"
+                    className="w-full mt-2 bg-[#E8C5A8] hover:bg-[#DDB896] text-[#2B1408] font-heading font-black py-3 rounded-full text-sm uppercase tracking-wider border-2 border-[#2B1408] shadow-md active:scale-95 transition-all"
                   >
                     Confirm Registration →
                   </button>
@@ -220,7 +220,7 @@ export default function Modals({
 
             {expoSubmitted ? (
               <div className="text-center py-8 space-y-4">
-                <div className="w-16 h-16 rounded-full bg-[#0247FE] text-white flex items-center justify-center mx-auto text-2xl font-black">
+                <div className="w-16 h-16 rounded-full bg-[#B85D2A] text-white border-2 border-[#2B1408] flex items-center justify-center mx-auto text-2xl font-black">
                   ✓
                 </div>
                 <h3 className="font-heading font-black text-2xl text-slate-900 uppercase">
@@ -229,7 +229,7 @@ export default function Modals({
                 <p className="text-sm text-slate-600 max-w-sm mx-auto">
                   Thank you! Your submission for <strong>{expoForm.projectTitle}</strong> under <strong>{expoForm.category}</strong> has been received by the STLC 2026 Technical Evaluation Committee.
                 </p>
-                <div className="p-4 bg-[#CCFF00] text-black rounded-2xl text-xs font-bold border border-black/10">
+                <div className="p-4 bg-[#E8C5A8] text-[#2B1408] rounded-2xl text-xs font-bold border border-[#2B1408]/20">
                   Notification with presentation slot instructions will follow.
                 </div>
                 <button
@@ -237,14 +237,14 @@ export default function Modals({
                     setExpoSubmitted(false);
                     onCloseExpo();
                   }}
-                  className="bg-black text-white font-black px-6 py-2.5 rounded-full text-xs uppercase"
+                  className="bg-[#2B1408] text-white font-black px-6 py-2.5 rounded-full text-xs uppercase"
                 >
                   Close
                 </button>
               </div>
             ) : (
               <div>
-                <div className="inline-flex items-center gap-1.5 bg-[#CCFF00] text-black px-3 py-1 rounded-full text-xs font-black uppercase mb-3 border border-black/10">
+                <div className="inline-flex items-center gap-1.5 bg-[#E8C5A8] text-[#2B1408] px-3 py-1 rounded-full text-xs font-black uppercase mb-3 border border-[#2B1408]/20">
                   PROJECT EXPO • STLC 2026
                 </div>
                 <h3 className="font-heading font-black text-2xl sm:text-3xl text-slate-900 uppercase tracking-tight">
@@ -267,7 +267,7 @@ export default function Modals({
                       onChange={(e) =>
                         setExpoForm({ ...expoForm, teamLead: e.target.value })
                       }
-                      className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-[#0247FE] focus:ring-1 focus:ring-[#0247FE]"
+                      className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-[#B85D2A] focus:ring-1 focus:ring-[#B85D2A]"
                     />
                   </div>
 
@@ -283,7 +283,7 @@ export default function Modals({
                       onChange={(e) =>
                         setExpoForm({ ...expoForm, email: e.target.value })
                       }
-                      className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-[#0247FE] focus:ring-1 focus:ring-[#0247FE]"
+                      className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-[#B85D2A] focus:ring-1 focus:ring-[#B85D2A]"
                     />
                   </div>
 
@@ -299,7 +299,7 @@ export default function Modals({
                       onChange={(e) =>
                         setExpoForm({ ...expoForm, projectTitle: e.target.value })
                       }
-                      className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-[#0247FE] focus:ring-1 focus:ring-[#0247FE]"
+                      className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-[#B85D2A] focus:ring-1 focus:ring-[#B85D2A]"
                     />
                   </div>
 
@@ -312,7 +312,7 @@ export default function Modals({
                       onChange={(e) =>
                         setExpoForm({ ...expoForm, category: e.target.value })
                       }
-                      className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-[#0247FE] focus:ring-1 focus:ring-[#0247FE]"
+                      className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-[#B85D2A] focus:ring-1 focus:ring-[#B85D2A]"
                     >
                       <option value="Hardware & IoT">Hardware & IoT</option>
                       <option value="Communications & Signal Processing">
@@ -330,7 +330,7 @@ export default function Modals({
 
                   <button
                     type="submit"
-                    className="w-full mt-2 bg-[#0247FE] hover:bg-blue-700 text-white font-heading font-black py-3 rounded-full text-sm uppercase tracking-wider shadow-md active:scale-95 transition-all"
+                    className="w-full mt-2 bg-[#B85D2A] hover:bg-[#96471B] text-white font-heading font-black py-3 rounded-full text-sm uppercase tracking-wider border-2 border-[#2B1408] shadow-md active:scale-95 transition-all"
                   >
                     Submit Project for Review →
                   </button>

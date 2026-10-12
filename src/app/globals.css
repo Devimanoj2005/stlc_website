@@ -3,34 +3,41 @@
 @theme {
   --font-sans: var(--font-sans), system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --font-syne: var(--font-syne), 'Syne', system-ui, sans-serif;
-  --color-electric-blue: #0247fe;
-  --color-neon-lime: #ccff00;
-  --color-neon-lime-light: #e5ff66;
+  --color-brand-mocha: #3e1c0d;
+  --color-brand-mocha-dark: #2c1408;
+  --color-brand-mocha-light: #5a2c17;
+  --color-brand-terracotta: #b85d2a;
+  --color-brand-terracotta-dark: #96471b;
+  --color-brand-sand: #e8c5a8;
+  --color-brand-sand-light: #f5e5d5;
+  --color-brand-cream: #faf3e8;
+  --color-brand-bone: #fff9f0;
 }
 
 :root {
-  --background: #0247fe;
-  --foreground: #ffffff;
+  --background: #3e1c0d;
+  --foreground: #faf3e8;
 }
 
+html,
 body {
   font-family: var(--font-sans);
   background-color: var(--background);
   color: var(--foreground);
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 /* Blueprint Grid Pattern */
 .bg-grid-pattern {
   background-size: 52px 52px;
   background-image:
-    linear-gradient(to right, rgba(255, 255, 255, 0.12) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.12) 1px, transparent 1px);
+    linear-gradient(to right, rgba(250, 243, 232, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(250, 243, 232, 0.08) 1px, transparent 1px);
 }
 
 .bg-grid-dots {
   background-size: 28px 28px;
-  background-image: radial-gradient(rgba(2, 71, 254, 0.15) 1.5px, transparent 0);
+  background-image: radial-gradient(rgba(232, 197, 168, 0.16) 1.5px, transparent 0);
 }
 
 /* Smooth continuous rotation */

@@ -18,12 +18,14 @@ export default function Home() {
   const [isExpoOpen, setIsExpoOpen] = useState(false);
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#0247FE] selection:bg-[#CCFF00] selection:text-black">
+    <div className="min-h-screen flex flex-col bg-[#3E1C0D] selection:bg-[#E8C5A8] selection:text-[#2B1408]">
       {/* Top Navbar */}
       <Navbar onRegisterClick={() => setIsRegisterOpen(true)} />
 
       {/* Hero Section with blueprint grid and giant neo-brutalist graphic typography */}
-      <div className="relative w-full bg-grid-pattern">
+      <div className="relative w-full bg-grid-pattern overflow-hidden">
+        {/* Warm Ambient Glow matching synora lighting */}
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_30%,rgba(184,93,42,0.25),transparent_70%)] pointer-events-none" />
         <Hero
           onRegisterClick={() => setIsRegisterOpen(true)}
           onExploreExpoClick={() => setIsExpoOpen(true)}
