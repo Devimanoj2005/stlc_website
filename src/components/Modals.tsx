@@ -69,7 +69,7 @@ export default function Modals({
                   Spot Reserved!
                 </h3>
                 <p className="text-sm text-slate-600 max-w-sm mx-auto">
-                  Thank you, <strong>{formData.name || "Innovator"}</strong>! We&apos;ve logged your pre-registration for STLC 2026. Details and confirmation have been queued for <strong>{formData.email}</strong>.
+                  Thank you, <strong>{formData.name || "Innovator"}</strong>! We&apos;ve logged your pre-registration for SYNORA 2026 (STLC). Details and confirmation have been queued for <strong>{formData.email}</strong>.
                 </p>
                 <div className="p-4 bg-[#B85D2A] text-white rounded-2xl text-xs font-semibold">
                   Two-Day Residential Conference • SJCET Palai
@@ -87,7 +87,7 @@ export default function Modals({
             ) : (
               <div>
                 <div className="inline-flex items-center gap-1.5 bg-[#B85D2A]/10 text-[#B85D2A] px-3 py-1 rounded-full text-xs font-black uppercase mb-3">
-                  STLC 2026 • Registration
+                  SYNORA 2026 • Registration
                 </div>
                 <h3 className="font-heading font-black text-2xl sm:text-3xl text-slate-900 uppercase tracking-tight">
                   Reserve Your Pass
@@ -227,7 +227,7 @@ export default function Modals({
                   Project Abstract Received!
                 </h3>
                 <p className="text-sm text-slate-600 max-w-sm mx-auto">
-                  Thank you! Your submission for <strong>{expoForm.projectTitle}</strong> under <strong>{expoForm.category}</strong> has been received by the STLC 2026 Technical Evaluation Committee.
+                  Thank you! Your submission for <strong>{expoForm.projectTitle}</strong> under <strong>{expoForm.category}</strong> has been received by the SYNORA 2026 Technical Evaluation Committee.
                 </p>
                 <div className="p-4 bg-[#E8C5A8] text-[#2B1408] rounded-2xl text-xs font-bold border border-[#2B1408]/20">
                   Notification with presentation slot instructions will follow.
@@ -245,7 +245,7 @@ export default function Modals({
             ) : (
               <div>
                 <div className="inline-flex items-center gap-1.5 bg-[#E8C5A8] text-[#2B1408] px-3 py-1 rounded-full text-xs font-black uppercase mb-3 border border-[#2B1408]/20">
-                  PROJECT EXPO • STLC 2026
+                  PROJECT EXPO • SYNORA 2026
                 </div>
                 <h3 className="font-heading font-black text-2xl sm:text-3xl text-slate-900 uppercase tracking-tight">
                   Submit Your Project

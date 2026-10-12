@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 interface FooterProps {
   onRegisterClick: () => void;
 }
@@ -22,7 +24,7 @@ export default function Footer({ onRegisterClick }: FooterProps) {
               Limited Residential Passes
             </span>
             <h3 className="font-heading font-black text-2xl sm:text-4xl text-[#FAF6F0] tracking-tight uppercase mt-2">
-              Join STLC 2026 Today
+              Join SYNORA 2026 Today
             </h3>
             <p className="text-[#FAF6F0]/80 text-sm mt-2">
               Transform ideas into action with two days of intensive learning, leadership development, and networking.
@@ -50,16 +52,25 @@ export default function Footer({ onRegisterClick }: FooterProps) {
 
           {/* Brand Col */}
           <div className="md:col-span-1 space-y-4">
-            <div className="flex items-center gap-1">
-              <div className="bg-[#FAF6F0] text-black font-extrabold px-3 py-1 rounded-full text-xs tracking-tight">
-                IEEE
-              </div>
-              <div className="bg-[#E8C5A8] text-[#2B1408] font-black px-2.5 py-1 rounded-full text-xs tracking-wider uppercase border border-[#2B1408]/20">
-                STLC 2026
+            <div className="flex flex-col gap-3">
+              <Image
+                src="/synoralogo.png"
+                alt="SYNORA"
+                width={1125}
+                height={268}
+                className="h-7 sm:h-8 w-auto object-contain"
+              />
+              <div className="flex items-center gap-1.5">
+                <div className="bg-[#FAF6F0] text-black font-extrabold px-3 py-0.5 rounded-full text-xs tracking-tight">
+                  IEEE
+                </div>
+                <div className="bg-[#E8C5A8] text-[#2B1408] font-black px-2.5 py-0.5 rounded-full text-xs tracking-wider uppercase border border-[#2B1408]/20">
+                  STLC 2026
+                </div>
               </div>
             </div>
             <p className="text-xs text-[#A88C78] leading-relaxed">
-              IEEE ComSoc Student Tech Leadership Conference 2026. Organized by IEEE ComSoc SBC SJCET in association with IEEE ComSoc Kerala Chapter.
+              SYNORA — IEEE ComSoc Student Tech Leadership Conference (STLC) 2026. Organized by IEEE ComSoc SBC SJCET in association with IEEE ComSoc Kerala Chapter.
             </p>
             <p className="text-[11px] text-[#E8C5A8] font-mono">
               Where Technology Meets Leadership
@@ -74,12 +85,12 @@ export default function Footer({ onRegisterClick }: FooterProps) {
             <ul className="space-y-2 text-xs text-slate-400">
               <li>
                 <a href="#about" className="hover:text-white transition-colors">
-                  About The Conference
+                  About SYNORA
                 </a>
               </li>
               <li>
                 <a href="#experience" className="hover:text-white transition-colors">
-                  The STLC Experience
+                  The SYNORA Experience
                 </a>
               </li>
               <li>
@@ -94,7 +105,7 @@ export default function Footer({ onRegisterClick }: FooterProps) {
               </li>
               <li>
                 <a href="#why-stlc" className="hover:text-white transition-colors">
-                  Why STLC 2026?
+                  Why SYNORA 2026?
                 </a>
               </li>
               <li>
@@ -145,7 +156,7 @@ export default function Footer({ onRegisterClick }: FooterProps) {
         {/* Bottom Bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
           <div>
-            © 2026 STLC. IEEE ComSoc Student Branch Chapter SJCET. All rights reserved.
+            © 2026 SYNORA (STLC). IEEE ComSoc Student Branch Chapter SJCET. All rights reserved.
           </div>
 
           <div className="flex items-center gap-4">

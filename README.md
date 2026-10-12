@@ -1,13 +1,13 @@
-# STLC 2026 | IEEE ComSoc Student Tech Leadership Conference
+# SYNORA 2026 | IEEE ComSoc Student Tech Leadership Conference (STLC)
 
 > **Where Technology Meets Leadership**  
-> Official web platform for the IEEE ComSoc Student Tech Leadership Conference (STLC) 2026.
+> Official web platform for **SYNORA 2026** — IEEE ComSoc Student Tech Leadership Conference (STLC).
 
 ---
 
 ## Overview
 
-**STLC 2026** is a premier two-day residential conference bringing together students and young professionals passionate about technology, innovation, and leadership.
+**SYNORA 2026** is a premier two-day residential conference bringing together students and young professionals passionate about technology, innovation, and leadership.
 
 - **Organized by:** IEEE ComSoc Student Branch Chapter, SJCET (St. Joseph's College of Engineering and Technology, Palai)
 - **In Association with:** IEEE ComSoc Kerala Chapter

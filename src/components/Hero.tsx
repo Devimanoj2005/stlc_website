@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 interface HeroProps {
   onRegisterClick: () => void;
   onExploreExpoClick: () => void;
@@ -7,18 +9,37 @@ interface HeroProps {
 
 export default function Hero({ onRegisterClick }: HeroProps) {
   return (
-    <section className="relative w-full pt-12 md:pt-16 pb-20 md:pb-28 overflow-hidden select-none">
+    <section className="relative w-full pt-10 md:pt-14 pb-20 md:pb-28 overflow-hidden select-none">
       {/* Container for Giant Typography and Floating Elements */}
       <div className="relative max-w-7xl mx-auto px-4 md:px-8 flex flex-col items-center justify-center">
 
         {/* Conference Pre-badge */}
         <div className="mb-4 inline-flex items-center gap-2 bg-[#2B1408]/60 backdrop-blur-md border border-[#FAF3E8]/20 rounded-full px-4 py-1.5 text-xs text-white tracking-wide shadow-sm">
           <span className="w-2 h-2 rounded-full bg-[#E8C5A8] animate-pulse" />
+          <span className="font-extrabold text-[#E8C5A8]">SYNORA 2026</span>
+          <span className="text-[#FAF3E8]/40">•</span>
           <span className="font-semibold text-[#FAF3E8]/90">
             IEEE ComSoc Kerala Chapter & SBC SJCET
           </span>
-          <span className="text-[#FAF3E8]/40">•</span>
-          <span className="text-[#E8C5A8] font-bold">2-Day Residential</span>
+          <span className="text-[#FAF3E8]/40 hidden sm:inline">•</span>
+          <span className="text-[#E8C5A8] font-bold hidden sm:inline">2-Day Residential</span>
+        </div>
+
+        {/* Official Synora Event Logo Display */}
+        <div className="my-2 md:my-3 flex flex-col items-center justify-center text-center">
+          <div className="relative group">
+            <Image
+              src="/synoralogo.png"
+              alt="SYNORA"
+              width={1125}
+              height={268}
+              className="h-12 sm:h-16 md:h-20 lg:h-24 w-auto object-contain drop-shadow-[0_10px_25px_rgba(0,0,0,0.6)] group-hover:scale-105 transition-transform duration-300"
+              priority
+            />
+          </div>
+          <div className="mt-2 inline-flex items-center gap-2 text-[10px] sm:text-xs font-mono font-bold tracking-[0.25em] text-[#E8C5A8] uppercase">
+            <span>Student Tech Leadership Conference</span>
+          </div>
         </div>
 
         {/* Central Giant Graphic Typography Block */}
@@ -136,7 +157,7 @@ export default function Hero({ onRegisterClick }: HeroProps) {
                 </svg>
               </div>
               <span className="text-[#FAF3E8] font-extrabold text-xs md:text-sm tracking-tight drop-shadow-sm">
-                stlc2026.ieee
+                synora2026.ieee
               </span>
               <span className="text-[#FAF3E8]/80 text-[10px] md:text-xs font-medium">
                 2-Day Residential
@@ -187,7 +208,7 @@ export default function Hero({ onRegisterClick }: HeroProps) {
           className="absolute -bottom-8 right-2 sm:right-8 md:right-16 lg:right-28 z-40 cursor-pointer group"
           role="button"
           tabIndex={0}
-          aria-label="Register Now for STLC 2026"
+          aria-label="Register Now for SYNORA 2026"
         >
           <div className="relative w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36 rounded-full bg-[#E8C5A8] border-2 border-[#2B1408] flex items-center justify-center shadow-2xl transition-transform duration-300 group-hover:scale-110">
             {/* Rotating circular SVG text */}
@@ -205,7 +226,7 @@ export default function Hero({ onRegisterClick }: HeroProps) {
                 style={{ letterSpacing: "2.4px" }}
               >
                 <textPath href="#circlePath" startOffset="0%">
-                  • STLC 2026 • REGISTER NOW • STLC 2026 •
+                  • SYNORA 2026 • REGISTER NOW • STLC •
                 </textPath>
               </text>
             </svg>

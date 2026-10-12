@@ -33,7 +33,7 @@ export default function ProjectExpoSection({
             </h2>
 
             <p className="text-[#FAF6F0]/90 text-base sm:text-lg md:text-xl font-normal leading-relaxed">
-              Have a project you&apos;re passionate about? STLC 2026 provides a premier platform for students to showcase their innovative projects, share their ideas, and connect with a community that values creativity and technical excellence.
+              Have a project you&apos;re passionate about? SYNORA 2026 provides a premier platform for students to showcase their innovative projects, share their ideas, and connect with a community that values creativity and technical excellence.
             </p>
 
             <p className="text-[#FAF6F0]/75 text-sm sm:text-base leading-relaxed">

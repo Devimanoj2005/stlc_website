@@ -15,9 +15,12 @@ const syne = Syne({
 });
 
 export const metadata: Metadata = {
-  title: "STLC 2026 | IEEE ComSoc Student Tech Leadership Conference",
+  title: "SYNORA 2026 | IEEE ComSoc Student Tech Leadership Conference",
   description:
-    "Where Technology Meets Leadership. A two-day residential conference organized by IEEE ComSoc SBC SJCET in association with IEEE ComSoc Kerala Chapter.",
+    "SYNORA 2026 — Where Technology Meets Leadership. A two-day residential conference organized by IEEE ComSoc SBC SJCET in association with IEEE ComSoc Kerala Chapter.",
+  icons: {
+    icon: "/synoralogo.png",
+  },
 };
 
 export default function RootLayout({
