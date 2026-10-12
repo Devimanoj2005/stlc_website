@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import Image from "next/image";
 
 interface NavbarProps {
   onRegisterClick: () => void;
@@ -8,34 +9,65 @@ interface NavbarProps {
 
 export default function Navbar({ onRegisterClick }: NavbarProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 20);
+    };
+
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <header className="relative z-50 w-full pt-4 md:pt-6 px-4 md:px-8 max-w-7xl mx-auto">
+    <header
+      className={`sticky top-0 z-50 w-full transition-all duration-300 ${scrolled
+        ? "bg-[#2B1408]/90 backdrop-blur-xl border-b border-[#FAF3E8]/15 shadow-xl shadow-black/30 py-3 md:py-3.5 px-4 md:px-8"
+        : "bg-transparent pt-4 md:pt-6 pb-2 px-4 md:px-8"
+        }`}
+    >
       <nav
         aria-label="Main Navigation"
-        className="flex items-center justify-between gap-4"
+        className="max-w-7xl mx-auto flex items-center justify-between gap-4"
       >
-        {/* Brand Logo in Neo-Brutalist Speech Bubble */}
+        {/* Brand Logo with SYNORA Event Logo */}
         <a
           href="#"
-          className="flex items-center gap-1 group focus:outline-none focus:ring-2 focus:ring-white rounded-2xl"
-          aria-label="STLC 2026 Home"
+          className="flex items-center gap-2.5 sm:gap-3 group focus:outline-none focus:ring-2 focus:ring-white rounded-2xl"
+          aria-label="SYNORA 2026 Home"
         >
-          {/* White Speech Bubble "IEEE" */}
-          <div className="relative bg-white text-black font-extrabold px-3.5 py-1.5 rounded-full text-xs md:text-sm tracking-tight shadow-md flex items-center justify-center">
-            <span className="font-heading">IEEE</span>
-            {/* Speech bubble small triangle tail */}
-            <div className="absolute -bottom-1 left-2 w-2 h-2 bg-white rotate-45" />
+          {/* Synora Event Logo */}
+          <div className="relative flex items-center">
+            <Image
+              src="/synoralogo.png"
+              alt="SYNORA"
+              width={1125}
+              height={268}
+              className="h-7 sm:h-8 md:h-9 w-auto object-contain transition-transform group-hover:scale-105"
+              priority
+            />
           </div>
 
-          {/* Desert Sand Bubble "STLC / 2026" */}
-          <div className="relative bg-[#E8C5A8] border-2 border-[#2B1408] text-[#2B1408] font-extrabold px-3 py-1 rounded-full text-xs md:text-sm tracking-wider uppercase shadow-md flex items-center gap-1 group-hover:scale-105 transition-transform">
-            <span className="font-heading font-black">STLC</span>
-            <span className="text-[10px] md:text-xs bg-[#2B1408] text-[#E8C5A8] px-1.5 py-0.2 rounded-md font-bold">
-              2026
-            </span>
-            {/* Speech bubble tail */}
-            <div className="absolute -bottom-1 right-2.5 w-1.5 h-1.5 bg-[#E8C5A8] border-r-2 border-b-2 border-[#2B1408] rotate-45" />
+          {/* IEEE and STLC Badges */}
+          <div className="hidden sm:flex items-center gap-1.5">
+            {/* White Speech Bubble "IEEE" */}
+            <div className="relative bg-white text-black font-extrabold px-2.5 py-1 rounded-full text-xs tracking-tight shadow-md flex items-center justify-center">
+              <span className="font-heading">IEEE</span>
+              {/* Speech bubble small triangle tail */}
+              <div className="absolute -bottom-1 left-2 w-1.5 h-1.5 bg-white rotate-45" />
+            </div>
+
+            {/* Desert Sand Bubble "STLC / 2026" */}
+            <div className="relative bg-[#E8C5A8] border-2 border-[#2B1408] text-[#2B1408] font-extrabold px-2.5 py-0.5 rounded-full text-xs tracking-wider uppercase shadow-md flex items-center gap-1 group-hover:scale-105 transition-transform">
+              <span className="font-heading font-black">STLC</span>
+              <span className="text-[10px] bg-[#2B1408] text-[#E8C5A8] px-1 py-0.2 rounded font-bold">
+                2026
+              </span>
+              {/* Speech bubble tail */}
+              <div className="absolute -bottom-1 right-2 w-1 h-1 bg-[#E8C5A8] border-r-2 border-b-2 border-[#2B1408] rotate-45" />
+            </div>
           </div>
         </a>
 
@@ -45,7 +77,7 @@ export default function Navbar({ onRegisterClick }: NavbarProps) {
             href="#about"
             className="text-[#FAF3E8]/80 hover:text-[#FAF3E8] hover:bg-white/10 px-3.5 py-1.5 rounded-full text-xs font-semibold tracking-wide transition-all"
           >
-            About STLC
+            About SYNORA
           </a>
           <a
             href="#experience"
@@ -69,7 +101,7 @@ export default function Navbar({ onRegisterClick }: NavbarProps) {
             href="#why-stlc"
             className="text-[#FAF3E8]/80 hover:text-[#FAF3E8] hover:bg-white/10 px-3.5 py-1.5 rounded-full text-xs font-semibold tracking-wide transition-all"
           >
-            Why STLC
+            Why SYNORA
           </a>
           <a
             href="#organizers"
@@ -125,13 +157,13 @@ export default function Navbar({ onRegisterClick }: NavbarProps) {
 
       {/* Mobile Menu Dropdown */}
       {mobileMenuOpen && (
-        <div className="lg:hidden mt-3 p-4 bg-[#2B1408]/95 backdrop-blur-xl border border-[#FAF3E8]/20 rounded-2xl shadow-2xl flex flex-col gap-2 animate-in fade-in slide-in-from-top-2 duration-200">
+        <div className="lg:hidden mt-3 max-w-7xl mx-auto p-4 bg-[#2B1408]/95 backdrop-blur-xl border border-[#FAF3E8]/20 rounded-2xl shadow-2xl flex flex-col gap-2 animate-in fade-in slide-in-from-top-2 duration-200">
           <a
             href="#about"
             onClick={() => setMobileMenuOpen(false)}
             className="text-[#FAF3E8]/90 hover:text-[#E8C5A8] px-3 py-2 rounded-lg text-sm font-medium transition-colors"
           >
-            About STLC
+            About SYNORA
           </a>
           <a
             href="#experience"
@@ -159,7 +191,7 @@ export default function Navbar({ onRegisterClick }: NavbarProps) {
             onClick={() => setMobileMenuOpen(false)}
             className="text-[#FAF3E8]/90 hover:text-[#E8C5A8] px-3 py-2 rounded-lg text-sm font-medium transition-colors"
           >
-            Why STLC
+            Why SYNORA
           </a>
           <a
             href="#organizers"

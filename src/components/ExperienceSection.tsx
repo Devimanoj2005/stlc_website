@@ -50,13 +50,13 @@ export default function ExperienceSection() {
             <span>02 • MORE THAN A CONFERENCE</span>
           </div>
           <h2 className="font-heading font-black text-3xl sm:text-5xl md:text-6xl text-slate-900 tracking-tight leading-tight uppercase">
-            The STLC Experience
+            The SYNORA Experience
           </h2>
           <p className="mt-4 text-base sm:text-lg md:text-xl text-[#5A453A] font-medium leading-relaxed">
             Step beyond the classroom and experience two days of learning, collaboration, and discovery. Engage with experts, exchange ideas with fellow innovators, develop your leadership potential, and explore opportunities that connect technology with real-world impact.
           </p>
           <p className="mt-3 text-sm sm:text-base text-[#7A6152] font-normal">
-            From practical learning experiences to insightful discussions with industry professionals, STLC 2026 brings together the people, ideas, and opportunities that can shape your future.
+            From practical learning experiences to insightful discussions with industry professionals, SYNORA 2026 brings together the people, ideas, and opportunities that can shape your future.
           </p>
         </div>
 

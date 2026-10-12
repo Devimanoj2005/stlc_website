@@ -60,10 +60,10 @@ export default function WhySTLCSection({ onRegisterClick }: WhySTLCSectionProps)
             <span>05 • YOUR NEXT STEP STARTS HERE</span>
           </div>
           <h2 className="font-heading font-black text-3xl sm:text-5xl text-slate-900 tracking-tight uppercase leading-tight">
-            Why STLC 2026?
+            Why SYNORA 2026?
           </h2>
           <p className="mt-4 text-base sm:text-lg text-[#5A453A] font-medium leading-relaxed">
-            STLC 2026 brings together the essential elements of professional growth in one immersive, two-day residential experience.
+            SYNORA 2026 brings together the essential elements of professional growth in one immersive, two-day residential experience.
           </p>
         </div>
 
