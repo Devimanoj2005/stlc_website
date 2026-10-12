@@ -28,9 +28,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${plusJakartaSans.variable} ${syne.variable} scroll-smooth antialiased`}
+      className={`${plusJakartaSans.variable} ${syne.variable} scroll-smooth antialiased bg-[#3E1C0D]`}
     >
-      <body className="min-h-full flex flex-col font-sans bg-[#E82E78] text-slate-900 selection:bg-[#CCFF00] selection:text-black">
+      <body className="min-h-full flex flex-col font-sans bg-[#3E1C0D] text-slate-900 selection:bg-[#E8C5A8] selection:text-[#2B1408]">
         {children}
       </body>
     </html>

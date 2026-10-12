@@ -10,21 +10,21 @@ export default function Footer({ onRegisterClick }: FooterProps) {
   };
 
   return (
-    <footer className="w-full bg-[#0F172A] text-white pt-16 pb-12 px-4 sm:px-6 md:px-12 border-t border-slate-800">
+    <footer className="w-full bg-[#1F0E05] text-[#FAF6F0] pt-16 pb-12 px-4 sm:px-6 md:px-12 border-t border-[#3E1C0D]">
       <div className="max-w-7xl mx-auto">
 
         {/* Top Footer Banner */}
-        <div className="bg-[#E82E78] rounded-3xl p-8 sm:p-10 mb-16 flex flex-col lg:flex-row items-center justify-between gap-8 shadow-2xl relative overflow-hidden">
-          <div className="absolute inset-0 bg-grid-pattern opacity-20 pointer-events-none" />
+        <div className="bg-[#3E1C0D] rounded-3xl p-8 sm:p-10 mb-16 flex flex-col lg:flex-row items-center justify-between gap-8 shadow-2xl relative overflow-hidden border border-[#B85D2A]/30">
+          <div className="absolute inset-0 bg-grid-pattern opacity-15 pointer-events-none" />
 
           <div className="relative z-10 max-w-xl text-center lg:text-left">
-            <span className="text-[#CCFF00] font-mono text-xs font-black uppercase tracking-widest">
+            <span className="text-[#E8C5A8] font-mono text-xs font-black uppercase tracking-widest">
               Limited Residential Passes
             </span>
-            <h3 className="font-heading font-black text-2xl sm:text-4xl text-white tracking-tight uppercase mt-2">
+            <h3 className="font-heading font-black text-2xl sm:text-4xl text-[#FAF6F0] tracking-tight uppercase mt-2">
               Join STLC 2026 Today
             </h3>
-            <p className="text-white/80 text-sm mt-2">
+            <p className="text-[#FAF6F0]/80 text-sm mt-2">
               Transform ideas into action with two days of intensive learning, leadership development, and networking.
             </p>
           </div>
@@ -32,13 +32,13 @@ export default function Footer({ onRegisterClick }: FooterProps) {
           <div className="relative z-10 flex flex-col sm:flex-row gap-3 w-full lg:w-auto">
             <button
               onClick={onRegisterClick}
-              className="bg-[#CCFF00] hover:bg-[#e5ff66] text-black font-heading font-black px-8 py-3.5 rounded-full text-xs sm:text-sm uppercase tracking-wider shadow-lg active:scale-95 transition-all duration-200 border-2 border-black"
+              className="bg-[#E8C5A8] hover:bg-[#DDB896] text-[#2B1408] font-heading font-black px-8 py-3.5 rounded-full text-xs sm:text-sm uppercase tracking-wider shadow-lg active:scale-95 transition-all duration-200 border-2 border-[#2B1408]"
             >
               Register Now
             </button>
             <a
               href="#about"
-              className="border border-white/60 hover:bg-white/10 text-white font-heading font-bold px-6 py-3.5 rounded-full text-xs sm:text-sm uppercase tracking-wider text-center transition-colors"
+              className="border border-[#FAF6F0]/40 hover:bg-white/10 text-[#FAF6F0] font-heading font-bold px-6 py-3.5 rounded-full text-xs sm:text-sm uppercase tracking-wider text-center transition-colors"
             >
               Learn More
             </a>
@@ -46,22 +46,22 @@ export default function Footer({ onRegisterClick }: FooterProps) {
         </div>
 
         {/* Main Footer Links */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-slate-800">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-[#3E1C0D]">
 
           {/* Brand Col */}
           <div className="md:col-span-1 space-y-4">
             <div className="flex items-center gap-1">
-              <div className="bg-white text-black font-extrabold px-3 py-1 rounded-full text-xs tracking-tight">
+              <div className="bg-[#FAF6F0] text-black font-extrabold px-3 py-1 rounded-full text-xs tracking-tight">
                 IEEE
               </div>
-              <div className="bg-[#CCFF00] text-black font-black px-2.5 py-1 rounded-full text-xs tracking-wider uppercase border border-black">
+              <div className="bg-[#E8C5A8] text-[#2B1408] font-black px-2.5 py-1 rounded-full text-xs tracking-wider uppercase border border-[#2B1408]/20">
                 STLC 2026
               </div>
             </div>
-            <p className="text-xs text-slate-400 leading-relaxed">
+            <p className="text-xs text-[#A88C78] leading-relaxed">
               IEEE ComSoc Student Tech Leadership Conference 2026. Organized by IEEE ComSoc SBC SJCET in association with IEEE ComSoc Kerala Chapter.
             </p>
-            <p className="text-[11px] text-[#CCFF00] font-mono">
+            <p className="text-[11px] text-[#E8C5A8] font-mono">
               Where Technology Meets Leadership
             </p>
           </div>
@@ -151,7 +151,7 @@ export default function Footer({ onRegisterClick }: FooterProps) {
           <div className="flex items-center gap-4">
             <button
               onClick={scrollToTop}
-              className="inline-flex items-center gap-1.5 text-xs text-slate-400 hover:text-[#CCFF00] transition-colors"
+              className="inline-flex items-center gap-1.5 text-xs text-[#A88C78] hover:text-[#E8C5A8] transition-colors"
             >
               <span>Back to Top</span>
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

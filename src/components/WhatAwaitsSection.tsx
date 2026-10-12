@@ -103,23 +103,23 @@ export default function WhatAwaitsSection({
   ];
 
   return (
-    <section id="awaits" className="w-full bg-white py-16 md:py-24 px-4 sm:px-6 md:px-12 border-t border-slate-100">
+    <section id="awaits" className="w-full bg-[#FAF6F0] py-16 md:py-24 px-4 sm:px-6 md:px-12 border-t border-[#E8DACB]">
       <div className="max-w-7xl mx-auto">
 
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 md:mb-16">
           <div>
-            <div className="inline-flex items-center gap-2 bg-[#E82E78] text-white px-3.5 py-1 rounded-full text-xs font-black uppercase tracking-wider mb-4">
+            <div className="inline-flex items-center gap-2 bg-[#B85D2A] text-white px-3.5 py-1 rounded-full text-xs font-black uppercase tracking-wider mb-4">
               <span>03 • EXPLORE THE EXPERIENCE</span>
             </div>
             <h2 className="font-heading font-black text-3xl sm:text-5xl text-slate-900 tracking-tight uppercase leading-tight">
               What Awaits You
             </h2>
-            <p className="mt-3 text-base sm:text-lg text-slate-600 max-w-2xl">
+            <p className="mt-3 text-base sm:text-lg text-[#5A453A] max-w-2xl">
               Seven immersive tracks curated to build your engineering depth, leadership fortitude, and professional community.
             </p>
           </div>
-          <div className="font-mono text-xs font-bold text-slate-400">
+          <div className="font-mono text-xs font-bold text-[#8C6854]">
             [ 7 CORE MODULES ]
           </div>
         </div>
@@ -130,30 +130,30 @@ export default function WhatAwaitsSection({
             <div
               key={exp.id}
               className={`rounded-3xl p-6 sm:p-7 border transition-all duration-300 hover:shadow-xl flex flex-col justify-between group ${exp.highlight
-                ? "bg-[#E82E78] text-white border-transparent"
+                ? "bg-[#3E1C0D] text-[#FAF6F0] border-[#B85D2A]/30 shadow-xl"
                 : exp.isExpo
-                  ? "bg-[#CCFF00] text-black border-black/15 shadow-md"
-                  : "bg-[#F8FAFC] text-slate-900 border-slate-200/80 hover:border-slate-300"
+                  ? "bg-[#E8C5A8] text-[#2B1408] border-[#2B1408]/20 shadow-md"
+                  : "bg-[#F4ECE3] text-slate-900 border-[#E2D4C5] hover:border-[#D4C0AD]"
                 } ${index === 0 ? "md:col-span-2 lg:col-span-2" : ""}`}
             >
               <div>
                 <div className="flex items-center justify-between mb-4">
                   <div
                     className={`w-12 h-12 rounded-2xl flex items-center justify-center ${exp.highlight
-                      ? "bg-white/15 text-[#CCFF00]"
+                      ? "bg-white/10 text-[#E8C5A8]"
                       : exp.isExpo
-                        ? "bg-black text-[#CCFF00]"
-                        : "bg-[#E82E78]/10 text-[#E82E78]"
+                        ? "bg-[#2B1408] text-[#E8C5A8]"
+                        : "bg-[#B85D2A]/10 text-[#B85D2A]"
                       }`}
                   >
                     {exp.icon}
                   </div>
                   <span
                     className={`text-[10px] font-black uppercase px-2.5 py-1 rounded-full ${exp.highlight
-                      ? "bg-[#CCFF00] text-black"
+                      ? "bg-[#E8C5A8] text-[#2B1408]"
                       : exp.isExpo
-                        ? "bg-black text-white"
-                        : "bg-slate-200 text-slate-800"
+                        ? "bg-[#2B1408] text-white"
+                        : "bg-[#EADDCF] text-[#4A3020]"
                       }`}
                   >
                     {exp.tag}
@@ -161,7 +161,7 @@ export default function WhatAwaitsSection({
                 </div>
 
                 <h3
-                  className={`font-heading font-black text-xl sm:text-2xl tracking-tight uppercase leading-snug ${exp.highlight ? "text-white" : "text-slate-900"
+                  className={`font-heading font-black text-xl sm:text-2xl tracking-tight uppercase leading-snug ${exp.highlight ? "text-[#FAF6F0]" : "text-slate-900"
                     }`}
                 >
                   {exp.title}
@@ -169,10 +169,10 @@ export default function WhatAwaitsSection({
 
                 <p
                   className={`mt-3 text-xs sm:text-sm leading-relaxed ${exp.highlight
-                    ? "text-white/80"
+                    ? "text-[#FAF6F0]/80"
                     : exp.isExpo
-                      ? "text-slate-800 font-medium"
-                      : "text-slate-600"
+                      ? "text-[#4A2818] font-medium"
+                      : "text-[#5A453A]"
                     }`}
                 >
                   {exp.description}
@@ -180,22 +180,22 @@ export default function WhatAwaitsSection({
               </div>
 
               {exp.isExpo ? (
-                <div className="mt-6 pt-4 border-t border-black/15 flex items-center justify-between">
+                <div className="mt-6 pt-4 border-t border-[#2B1408]/15 flex items-center justify-between">
                   <button
                     onClick={onExploreExpoClick}
-                    className="bg-black text-white px-4 py-2 rounded-full text-xs font-black tracking-wide uppercase hover:bg-slate-900 transition-colors shadow-sm"
+                    className="bg-[#2B1408] text-[#FAF6F0] px-4 py-2 rounded-full text-xs font-black tracking-wide uppercase hover:bg-[#3E1C0D] transition-colors shadow-sm"
                   >
                     Explore Project Expo →
                   </button>
-                  <span className="text-xs font-mono font-bold text-black/60">
+                  <span className="text-xs font-mono font-bold text-[#2B1408]/60">
                     SJCET 2026
                   </span>
                 </div>
               ) : (
                 <div
                   className={`mt-6 pt-4 border-t flex items-center justify-between text-xs font-bold ${exp.highlight
-                    ? "border-white/15 text-[#CCFF00]"
-                    : "border-slate-100 text-slate-500"
+                    ? "border-white/15 text-[#E8C5A8]"
+                    : "border-[#E2D4C5] text-[#7A6152]"
                     }`}
                 >
                   <span>Track {index + 1 < 10 ? `0${index + 1}` : index + 1}</span>
