@@ -61,23 +61,23 @@ export default function ExperienceSection() {
         </div>
 
         {/* 4 Pillars Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 xl:gap-6">
           {pillars.map((item) => (
             <div
               key={item.title}
-              className="bg-white rounded-3xl p-6 sm:p-7 border border-[#E2D4C5] shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between group"
+              className="bg-white rounded-3xl p-6 sm:p-6 lg:p-5 xl:p-6 border border-[#E2D4C5] shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between group overflow-hidden"
             >
               <div>
-                <div className="flex items-center justify-between mb-4">
-                  <span className="font-mono text-xs font-bold text-slate-400">
+                <div className="flex items-center justify-between gap-2 mb-4">
+                  <span className="font-mono text-xs font-bold text-slate-400 shrink-0">
                     {item.number}
                   </span>
-                  <span className="text-[10px] font-extrabold uppercase px-2.5 py-1 rounded-full bg-[#F3E9DD] text-[#5A3525]">
+                  <span className="text-[10px] font-extrabold uppercase px-2.5 py-1 rounded-full bg-[#F3E9DD] text-[#5A3525] shrink-0">
                     {item.badge}
                   </span>
                 </div>
 
-                <h3 className="font-heading font-black text-2xl sm:text-3xl text-slate-900 tracking-tight uppercase">
+                <h3 className="font-heading font-black text-xl sm:text-2xl lg:text-lg xl:text-xl 2xl:text-2xl text-slate-900 tracking-tight uppercase break-words">
                   {item.title}
                 </h3>
                 <h4 className="text-xs font-bold text-[#B85D2A] uppercase tracking-wider mt-1">
