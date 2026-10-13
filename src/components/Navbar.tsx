@@ -30,7 +30,7 @@ export default function Navbar({ onRegisterClick }: NavbarProps) {
     >
       <nav
         aria-label="Main Navigation"
-        className="max-w-7xl mx-auto flex items-center justify-between gap-4"
+        className="w-full max-w-7xl lg:max-w-none mx-auto flex items-center justify-between gap-4"
       >
         {/* Brand Logo with SYNORA Event Logo */}
         <a
