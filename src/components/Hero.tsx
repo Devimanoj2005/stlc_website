@@ -19,7 +19,7 @@ export default function Hero({ onRegisterClick }: HeroProps) {
           <span className="font-extrabold text-[#E8C5A8]">SYNORA 2026</span>
           <span className="text-[#FAF3E8]/40">•</span>
           <span className="font-semibold text-[#FAF3E8]/90">
-            IEEE ComSoc Kerala Chapter & SBC SJCET
+            IEEE ComSoc SBC SJCET & IEEE ComSoc Kerala Chapter
           </span>
           <span className="text-[#FAF3E8]/40 hidden sm:inline">•</span>
           <span className="text-[#E8C5A8] font-bold hidden sm:inline">2-Day Residential</span>
@@ -38,7 +38,7 @@ export default function Hero({ onRegisterClick }: HeroProps) {
             />
           </div>
           <div className="mt-2 inline-flex items-center gap-2 text-[10px] sm:text-xs font-mono font-bold tracking-[0.25em] text-[#E8C5A8] uppercase">
-            <span>Student Tech Leadership Conference</span>
+            <span>Student Tech Leadership Conference 2026</span>
           </div>
         </div>
 

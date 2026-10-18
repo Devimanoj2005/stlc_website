@@ -40,7 +40,7 @@ export default function Home() {
         />
 
         {/* 01. ABOUT STLC 2026 */}
-        <AboutSection />
+        <AboutSection onRegisterClick={() => setIsRegisterOpen(true)} />
 
         {/* 02. THE STLC EXPERIENCE */}
         <ExperienceSection />
