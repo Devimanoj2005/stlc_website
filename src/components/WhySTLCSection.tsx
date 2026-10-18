@@ -88,7 +88,7 @@ const events = [
 
 export default function WhySTLCSection({ onRegisterClick }: WhySTLCSectionProps) {
   return (
-    <section id="why-stlc" className="w-full bg-[#F5ECE1] py-16 md:py-24 px-4 sm:px-6 md:px-12 border-t border-[#E2D4C5]">
+    <section id="why-stlc" className="w-full bg-[#F5ECE1] py-16 md:py-24 px-4 sm:px-6 md:px-12 border-t border-[#E2D4C5] overflow-hidden">
       <div className="max-w-7xl mx-auto">
 
         {/* Section Header */}
@@ -110,12 +110,12 @@ export default function WhySTLCSection({ onRegisterClick }: WhySTLCSectionProps)
         </div>
 
         {/* Events Bento Grid */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5">
           {events.map((event, index) => (
             <div
               key={event.id}
               className={`rounded-3xl p-5 sm:p-6 border flex flex-col justify-between transition-all duration-300 hover:shadow-xl hover:-translate-y-1 group
-                ${event.wide ? "col-span-2" : "col-span-1"}
+                ${event.wide ? "sm:col-span-2" : "col-span-1"}
                 ${event.dark
                   ? "bg-[#3E1C0D] text-[#FAF6F0] border-[#B85D2A]/30 shadow-xl"
                   : event.accent

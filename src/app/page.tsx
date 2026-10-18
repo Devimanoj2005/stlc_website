@@ -8,6 +8,7 @@ import ExperienceSection from "@/components/ExperienceSection";
 import WhatAwaitsSection from "@/components/WhatAwaitsSection";
 import ProjectExpoSection from "@/components/ProjectExpoSection";
 import WhySTLCSection from "@/components/WhySTLCSection";
+import EventTimelineSection from "@/components/EventTimelineSection";
 import OrganizersSection from "@/components/OrganizersSection";
 import Footer from "@/components/Footer";
 import Modals from "@/components/Modals";
@@ -44,10 +45,13 @@ export default function Home() {
         {/* 04. PROJECT EXPO */}
         <ProjectExpoSection onExploreExpoClick={() => setIsExpoOpen(true)} />
 
-        {/* 05. WHY STLC 2026? */}
+        {/* 05. EVENTS */}
         <WhySTLCSection onRegisterClick={() => setIsRegisterOpen(true)} />
 
-        {/* 06. ORGANIZERS */}
+        {/* 06. EVENT TIMELINE */}
+        <EventTimelineSection />
+
+        {/* 07. ORGANIZERS */}
         <OrganizersSection />
       </main>
 

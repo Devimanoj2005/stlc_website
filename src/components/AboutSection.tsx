@@ -16,7 +16,7 @@ export default function AboutSection({ onRegisterClick }: AboutSectionProps) {
               <span>01 • ABOUT SYNORA 2026</span>
             </div>
             <h2 className="font-heading font-black text-3xl sm:text-4xl md:text-5xl text-slate-900 tracking-tight leading-tight">
-              Where Technology Meets Leadership
+              SYNORA 2026
             </h2>
           </div>
           <div className="bg-[#E8C5A8] border border-[#2B1408]/20 text-[#2B1408] px-4 py-2 rounded-2xl font-bold text-xs md:text-sm inline-flex items-center gap-2 self-start md:self-auto shadow-sm">

@@ -104,6 +104,12 @@ export default function Navbar({ onRegisterClick }: NavbarProps) {
             Events
           </a>
           <a
+            href="#timeline"
+            className="text-[#FAF3E8]/80 hover:text-[#FAF3E8] hover:bg-white/10 px-3.5 py-1.5 rounded-full text-xs font-semibold tracking-wide transition-all"
+          >
+            Timeline
+          </a>
+          <a
             href="#organizers"
             className="text-[#FAF3E8]/80 hover:text-[#FAF3E8] hover:bg-white/10 px-3.5 py-1.5 rounded-full text-xs font-semibold tracking-wide transition-all"
           >
@@ -192,6 +198,13 @@ export default function Navbar({ onRegisterClick }: NavbarProps) {
             className="text-[#FAF3E8]/90 hover:text-[#E8C5A8] px-3 py-2 rounded-lg text-sm font-medium transition-colors"
           >
             Events
+          </a>
+          <a
+            href="#timeline"
+            onClick={() => setMobileMenuOpen(false)}
+            className="text-[#FAF3E8]/90 hover:text-[#E8C5A8] px-3 py-2 rounded-lg text-sm font-medium transition-colors"
+          >
+            Timeline
           </a>
           <a
             href="#organizers"
