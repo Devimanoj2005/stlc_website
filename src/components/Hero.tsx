@@ -9,7 +9,7 @@ interface HeroProps {
 
 export default function Hero({ onRegisterClick }: HeroProps) {
   return (
-    <section className="relative w-full pt-10 md:pt-14 pb-20 md:pb-28 overflow-hidden select-none">
+    <section className="relative w-full flex-1 flex flex-col justify-center pt-10 md:pt-14 pb-20 md:pb-28 overflow-hidden select-none">
       {/* Container for Giant Typography and Floating Elements */}
       <div className="relative max-w-7xl mx-auto px-4 md:px-8 flex flex-col items-center justify-center">
 

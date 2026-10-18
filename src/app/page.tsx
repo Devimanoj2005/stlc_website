@@ -3,7 +3,6 @@
 import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import ShowcaseCards from "@/components/ShowcaseCards";
 import AboutSection from "@/components/AboutSection";
 import ExperienceSection from "@/components/ExperienceSection";
 import WhatAwaitsSection from "@/components/WhatAwaitsSection";
@@ -18,27 +17,21 @@ export default function Home() {
   const [isExpoOpen, setIsExpoOpen] = useState(false);
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#3E1C0D] selection:bg-[#E8C5A8] selection:text-[#2B1408]">
-      {/* Top Navbar */}
-      <Navbar onRegisterClick={() => setIsRegisterOpen(true)} />
-
-      {/* Hero Section with blueprint grid and giant neo-brutalist graphic typography */}
-      <div className="relative w-full bg-grid-pattern overflow-hidden">
-        {/* Warm Ambient Glow matching synora lighting */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_30%,rgba(184,93,42,0.25),transparent_70%)] pointer-events-none" />
-        <Hero
-          onRegisterClick={() => setIsRegisterOpen(true)}
-          onExploreExpoClick={() => setIsExpoOpen(true)}
-        />
+    <div className="selection:bg-[#E8C5A8] selection:text-[#2B1408]">
+      {/* Navbar + Hero fills exactly one full viewport */}
+      <div className="min-h-screen flex flex-col bg-[#3E1C0D]">
+        <Navbar onRegisterClick={() => setIsRegisterOpen(true)} />
+        <div className="relative flex-1 flex flex-col bg-grid-pattern overflow-hidden">
+          {/* Warm Ambient Glow matching synora lighting */}
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_30%,rgba(184,93,42,0.25),transparent_70%)] pointer-events-none" />
+          <Hero
+            onRegisterClick={() => setIsRegisterOpen(true)}
+            onExploreExpoClick={() => setIsExpoOpen(true)}
+          />
+        </div>
       </div>
 
-      {/* Showcase Cards - White curved top section directly under the hero */}
-      <main className="flex-1 flex flex-col w-full">
-        <ShowcaseCards
-          onRegisterClick={() => setIsRegisterOpen(true)}
-          onExploreExpoClick={() => setIsExpoOpen(true)}
-        />
-
+      <main className="flex flex-col w-full">
         {/* 01. ABOUT STLC 2026 */}
         <AboutSection onRegisterClick={() => setIsRegisterOpen(true)} />
 
