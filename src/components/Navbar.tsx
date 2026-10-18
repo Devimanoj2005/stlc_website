@@ -77,19 +77,19 @@ export default function Navbar({ onRegisterClick }: NavbarProps) {
             href="#about"
             className="text-[#FAF3E8]/80 hover:text-[#FAF3E8] hover:bg-white/10 px-3.5 py-1.5 rounded-full text-xs font-semibold tracking-wide transition-all"
           >
-            About SYNORA
+            About
           </a>
           <a
             href="#experience"
             className="text-[#FAF3E8]/80 hover:text-[#FAF3E8] hover:bg-white/10 px-3.5 py-1.5 rounded-full text-xs font-semibold tracking-wide transition-all"
           >
-            The Experience
+            Experience
           </a>
           <a
             href="#awaits"
             className="text-[#FAF3E8]/80 hover:text-[#FAF3E8] hover:bg-white/10 px-3.5 py-1.5 rounded-full text-xs font-semibold tracking-wide transition-all"
           >
-            What Awaits
+            Programme
           </a>
           <a
             href="#expo"
@@ -101,13 +101,19 @@ export default function Navbar({ onRegisterClick }: NavbarProps) {
             href="#why-stlc"
             className="text-[#FAF3E8]/80 hover:text-[#FAF3E8] hover:bg-white/10 px-3.5 py-1.5 rounded-full text-xs font-semibold tracking-wide transition-all"
           >
-            Why SYNORA
+            Events
+          </a>
+          <a
+            href="#timeline"
+            className="text-[#FAF3E8]/80 hover:text-[#FAF3E8] hover:bg-white/10 px-3.5 py-1.5 rounded-full text-xs font-semibold tracking-wide transition-all"
+          >
+            Schedule
           </a>
           <a
             href="#organizers"
             className="text-[#FAF3E8]/80 hover:text-[#FAF3E8] hover:bg-white/10 px-3.5 py-1.5 rounded-full text-xs font-semibold tracking-wide transition-all"
           >
-            Organizers
+            Committee
           </a>
         </div>
 
@@ -163,21 +169,21 @@ export default function Navbar({ onRegisterClick }: NavbarProps) {
             onClick={() => setMobileMenuOpen(false)}
             className="text-[#FAF3E8]/90 hover:text-[#E8C5A8] px-3 py-2 rounded-lg text-sm font-medium transition-colors"
           >
-            About SYNORA
+            About
           </a>
           <a
             href="#experience"
             onClick={() => setMobileMenuOpen(false)}
             className="text-[#FAF3E8]/90 hover:text-[#E8C5A8] px-3 py-2 rounded-lg text-sm font-medium transition-colors"
           >
-            The Experience
+            Experience
           </a>
           <a
             href="#awaits"
             onClick={() => setMobileMenuOpen(false)}
             className="text-[#FAF3E8]/90 hover:text-[#E8C5A8] px-3 py-2 rounded-lg text-sm font-medium transition-colors"
           >
-            What Awaits
+            Programme
           </a>
           <a
             href="#expo"
@@ -191,14 +197,21 @@ export default function Navbar({ onRegisterClick }: NavbarProps) {
             onClick={() => setMobileMenuOpen(false)}
             className="text-[#FAF3E8]/90 hover:text-[#E8C5A8] px-3 py-2 rounded-lg text-sm font-medium transition-colors"
           >
-            Why SYNORA
+            Events
+          </a>
+          <a
+            href="#timeline"
+            onClick={() => setMobileMenuOpen(false)}
+            className="text-[#FAF3E8]/90 hover:text-[#E8C5A8] px-3 py-2 rounded-lg text-sm font-medium transition-colors"
+          >
+            Schedule
           </a>
           <a
             href="#organizers"
             onClick={() => setMobileMenuOpen(false)}
             className="text-[#FAF3E8]/90 hover:text-[#E8C5A8] px-3 py-2 rounded-lg text-sm font-medium transition-colors"
           >
-            Organizers
+            Committee
           </a>
           <div className="pt-2 border-t border-white/10">
             <button

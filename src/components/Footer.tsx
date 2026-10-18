@@ -7,18 +7,13 @@ interface FooterProps {
 }
 
 export default function Footer({ onRegisterClick }: FooterProps) {
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-
   return (
-    <footer className="w-full bg-[#1F0E05] text-[#FAF6F0] pt-16 pb-12 px-4 sm:px-6 md:px-12 border-t border-[#3E1C0D]">
+    <footer className="w-full bg-[#1F0E05] text-[#FAF6F0] pt-12 pb-8 px-4 sm:px-6 md:px-12 border-t border-[#3E1C0D]">
       <div className="max-w-7xl mx-auto">
 
-        {/* Top Footer Banner */}
-        <div className="bg-[#3E1C0D] rounded-3xl p-8 sm:p-10 mb-16 flex flex-col lg:flex-row items-center justify-between gap-8 shadow-2xl relative overflow-hidden border border-[#B85D2A]/30">
+        {/* CTA Banner */}
+        <div className="bg-[#3E1C0D] rounded-3xl p-8 sm:p-10 mb-12 flex flex-col lg:flex-row items-center justify-between gap-8 shadow-2xl relative overflow-hidden border border-[#B85D2A]/30">
           <div className="absolute inset-0 bg-grid-pattern opacity-15 pointer-events-none" />
-
           <div className="relative z-10 max-w-xl text-center lg:text-left">
             <span className="text-[#E8C5A8] font-mono text-xs font-black uppercase tracking-widest">
               Limited Residential Passes
@@ -30,7 +25,6 @@ export default function Footer({ onRegisterClick }: FooterProps) {
               Transform ideas into action with two days of intensive learning, leadership development, and networking.
             </p>
           </div>
-
           <div className="relative z-10 flex flex-col sm:flex-row gap-3 w-full lg:w-auto">
             <button
               onClick={onRegisterClick}
@@ -47,129 +41,89 @@ export default function Footer({ onRegisterClick }: FooterProps) {
           </div>
         </div>
 
-        {/* Main Footer Links */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-[#3E1C0D]">
+        {/* Main Grid: Logo | Links | Location + Contact */}
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 pb-10 border-b border-[#3E1C0D]">
 
-          {/* Brand Col */}
-          <div className="md:col-span-1 space-y-4">
-            <div className="flex flex-col gap-3">
-              <Image
-                src="/synoralogo.png"
-                alt="SYNORA"
-                width={1125}
-                height={268}
-                className="h-7 sm:h-8 w-auto object-contain"
-              />
-              <div className="flex items-center gap-1.5">
-                <div className="bg-[#FAF6F0] text-black font-extrabold px-3 py-0.5 rounded-full text-xs tracking-tight">
-                  IEEE
-                </div>
-                <div className="bg-[#E8C5A8] text-[#2B1408] font-black px-2.5 py-0.5 rounded-full text-xs tracking-wider uppercase border border-[#2B1408]/20">
-                  STLC 2026
-                </div>
-              </div>
-            </div>
-            <p className="text-xs text-[#A88C78] leading-relaxed">
-              SYNORA — IEEE ComSoc Student Tech Leadership Conference (STLC) 2026. Organized by IEEE ComSoc SBC SJCET in association with IEEE ComSoc Kerala Chapter.
+          {/* Logo */}
+          <div className="flex flex-col gap-3">
+            <Image
+              src="/synoralogo.png"
+              alt="SYNORA"
+              width={1125}
+              height={268}
+              className="h-8 w-auto object-contain"
+            />
+            <p className="text-[11px] text-[#A88C78] leading-relaxed">
+              IEEE ComSoc Student Tech Leadership Conference 2026
             </p>
             <p className="text-[11px] text-[#E8C5A8] font-mono">
               Where Technology Meets Leadership
             </p>
           </div>
 
-          {/* Quick Links */}
+          {/* Page Links */}
           <div>
-            <h4 className="text-xs font-black uppercase tracking-widest text-slate-300 mb-4">
+            <h4 className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-4">
               Navigation
             </h4>
             <ul className="space-y-2 text-xs text-slate-400">
-              <li>
-                <a href="#about" className="hover:text-white transition-colors">
-                  About SYNORA
-                </a>
-              </li>
-              <li>
-                <a href="#experience" className="hover:text-white transition-colors">
-                  The SYNORA Experience
-                </a>
-              </li>
-              <li>
-                <a href="#awaits" className="hover:text-white transition-colors">
-                  What Awaits You
-                </a>
-              </li>
-              <li>
-                <a href="#expo" className="hover:text-white transition-colors">
-                  Project Expo
-                </a>
-              </li>
-              <li>
-                <a href="#why-stlc" className="hover:text-white transition-colors">
-                  Why SYNORA 2026?
-                </a>
-              </li>
-              <li>
-                <a href="#organizers" className="hover:text-white transition-colors">
-                  Organizing Body
-                </a>
-              </li>
+              <li><a href="#about" className="hover:text-white transition-colors">About SYNORA</a></li>
+              <li><a href="#experience" className="hover:text-white transition-colors">The Experience</a></li>
+              <li><a href="#awaits" className="hover:text-white transition-colors">What Awaits You</a></li>
+              <li><a href="#expo" className="hover:text-white transition-colors">Project Expo</a></li>
+              <li><a href="#why-stlc" className="hover:text-white transition-colors">Events</a></li>
+              <li><a href="#timeline" className="hover:text-white transition-colors">Timeline</a></li>
+              <li><a href="#organizers" className="hover:text-white transition-colors">Organizers</a></li>
             </ul>
           </div>
 
-          {/* Core Pillars */}
-          <div>
-            <h4 className="text-xs font-black uppercase tracking-widest text-slate-300 mb-4">
-              Focus Tracks
-            </h4>
-            <ul className="space-y-2 text-xs text-slate-400">
-              <li>Technical Sessions</li>
-              <li>Hands-on Workshops</li>
-              <li>Career Guidance</li>
-              <li>Leadership Activities</li>
-              <li>Young Professionals Panel</li>
-              <li>Hardware & Software Expo</li>
-            </ul>
-          </div>
-
-          {/* Venue & Chapter */}
-          <div>
-            <h4 className="text-xs font-black uppercase tracking-widest text-slate-300 mb-4">
-              Venue & Host
-            </h4>
-            <p className="text-xs text-slate-400 leading-relaxed">
-              St. Joseph&apos;s College of Engineering and Technology (SJCET)
-              <br />
-              Palai, Kottayam, Kerala, India
-            </p>
-            <div className="mt-4 pt-4 border-t border-slate-800">
-              <span className="text-[10px] text-slate-400 uppercase font-mono block">
-                Association
-              </span>
-              <span className="text-xs text-white font-bold">
-                IEEE ComSoc Kerala Chapter
-              </span>
+          {/* Location + Contact */}
+          <div className="space-y-5">
+            <div>
+              <h4 className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-2">
+                Location
+              </h4>
+              <p className="text-xs text-slate-400 leading-relaxed">
+                St. Joseph&apos;s College of Engineering and Technology (SJCET)
+                <br />
+                Palai, Kottayam, Kerala, India
+              </p>
+            </div>
+            <div>
+              <h4 className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-2">
+                Contact
+              </h4>
+              <ul className="space-y-1.5 text-xs text-slate-400">
+                <li>
+                  <span className="text-[#FAF6F0]/70">Sandra Biju</span>
+                  <a href="tel:+919447051746" className="block hover:text-white transition-colors">+91 94470 51746</a>
+                </li>
+                <li>
+                  <span className="text-[#FAF6F0]/70">Lena Annette Wilson</span>
+                  <a href="tel:+917907181525" className="block hover:text-white transition-colors">+91 79071 81525</a>
+                </li>
+                <li>
+                  <span className="text-[#FAF6F0]/70">Arjun Anil</span>
+                  <a href="tel:+917012087830" className="block hover:text-white transition-colors">+91 70120 87830</a>
+                </li>
+              </ul>
             </div>
           </div>
 
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
-          <div>
-            © 2026 SYNORA (STLC). IEEE ComSoc Student Branch Chapter SJCET. All rights reserved.
-          </div>
-
-          <div className="flex items-center gap-4">
-            <button
-              onClick={scrollToTop}
-              className="inline-flex items-center gap-1.5 text-xs text-[#A88C78] hover:text-[#E8C5A8] transition-colors"
-            >
-              <span>Back to Top</span>
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 10l7-7m0 0l7 7m-7-7v18" />
-              </svg>
-            </button>
-          </div>
+        <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-[11px] text-slate-600">
+          <span>© 2026 SYNORA · IEEE ComSoc SBC SJCET. All rights reserved.</span>
+          <button
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            className="text-[#A88C78] hover:text-[#E8C5A8] transition-colors flex items-center gap-1"
+          >
+            Back to Top
+            <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 10l7-7m0 0l7 7m-7-7v18" />
+            </svg>
+          </button>
         </div>
 
       </div>
