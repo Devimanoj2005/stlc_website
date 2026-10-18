@@ -8,7 +8,7 @@ export default function OrganizersSection() {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-14 md:mb-18">
           <div className="inline-flex items-center gap-2 bg-[#E8C5A8] text-[#2B1408] px-3.5 py-1 rounded-full text-xs font-black uppercase tracking-wider mb-4 border border-[#2B1408]/20 shadow-sm">
-            <span>06 • POWERED BY IEEE COMSOC</span>
+            <span>05 • POWERED BY IEEE COMSOC</span>
           </div>
           <h2 className="font-heading font-black text-3xl sm:text-5xl text-slate-900 tracking-tight uppercase leading-tight">
             The Organizers
@@ -33,10 +33,12 @@ export default function OrganizersSection() {
                 </span>
               </div>
 
-              <div className="w-16 h-16 rounded-2xl bg-[#FAF6F0] border border-[#E2D4C5] p-2 flex items-center justify-center mb-6 shadow-sm group-hover:scale-105 transition-transform">
-                <div className="font-heading font-black text-xl text-[#B85D2A]">
-                  SJCET
-                </div>
+              <div className="h-16 w-fit bg-[#2B1408] border border-[#FAF3E8]/10 rounded-2xl px-4 py-2 flex items-center justify-center mb-6 shadow-sm group-hover:scale-105 transition-transform">
+                <img
+                  src="/ieeecomSocSJCET.png"
+                  alt="IEEE ComSoc SBC SJCET"
+                  className="h-10 w-auto object-contain"
+                />
               </div>
 
               <h3 className="font-heading font-black text-2xl text-slate-900 tracking-tight uppercase">
@@ -73,10 +75,18 @@ export default function OrganizersSection() {
                 </span>
               </div>
 
-              <div className="w-16 h-16 rounded-2xl bg-[#2B1408] text-[#E8C5A8] p-2 flex items-center justify-center mb-6 shadow-sm group-hover:scale-105 transition-transform">
-                <div className="font-heading font-black text-xl">
-                  IEEE
-                </div>
+              <div className="h-16 w-fit bg-[#2B1408] border border-[#FAF3E8]/10 rounded-2xl px-4 py-2 flex items-center justify-center mb-6 shadow-sm group-hover:scale-105 transition-transform">
+                <img
+                  src="/comsoc-logo.png.png"
+                  alt="IEEE ComSoc Kerala Chapter"
+                  className="h-10 w-auto object-contain"
+                  onError={(e) => {
+                    const target = e.currentTarget;
+                    if (target.src.endsWith(".png.png")) {
+                      target.src = "/comsoc-logo.png";
+                    }
+                  }}
+                />
               </div>
 
               <h3 className="font-heading font-black text-2xl text-slate-900 tracking-tight uppercase">

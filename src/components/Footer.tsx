@@ -44,19 +44,21 @@ export default function Footer({ onRegisterClick }: FooterProps) {
         {/* Main Grid: Logo | Links | Location + Contact */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 pb-10 border-b border-[#3E1C0D]">
 
-          {/* Logo */}
-          <div className="flex flex-col gap-3">
+          {/* Logo & Organizers */}
+          <div className="flex flex-col items-start gap-4">
             <Image
               src="/synoralogo.png"
               alt="SYNORA"
               width={1125}
               height={268}
-              className="h-8 w-auto object-contain"
+              className="h-8 w-auto object-contain object-left"
             />
-            <p className="text-[11px] text-[#A88C78] leading-relaxed">
-              IEEE ComSoc Student Tech Leadership Conference 2026
-            </p>
-            <p className="text-[11px] text-[#E8C5A8] font-mono">
+            <div className="text-xs text-[#E8C5A8] font-bold space-y-2 tracking-wider uppercase">
+              <p>IEEE SB SJCET</p>
+              <p>IEEE COMSOC SBC SJCET</p>
+              <p>IEEE COMSOC KERALA CHAPTER</p>
+            </div>
+            <p className="text-[11px] text-[#A88C78] font-mono pt-1">
               Where Technology Meets Leadership
             </p>
           </div>
@@ -68,11 +70,9 @@ export default function Footer({ onRegisterClick }: FooterProps) {
             </h4>
             <ul className="space-y-2 text-xs text-slate-400">
               <li><a href="#about" className="hover:text-white transition-colors">About SYNORA</a></li>
-              <li><a href="#experience" className="hover:text-white transition-colors">The Experience</a></li>
-              <li><a href="#awaits" className="hover:text-white transition-colors">What Awaits You</a></li>
               <li><a href="#expo" className="hover:text-white transition-colors">Project Expo</a></li>
               <li><a href="#why-stlc" className="hover:text-white transition-colors">Events</a></li>
-              <li><a href="#timeline" className="hover:text-white transition-colors">Timeline</a></li>
+              <li><a href="#timeline" className="hover:text-white transition-colors">Event Schedule</a></li>
               <li><a href="#organizers" className="hover:text-white transition-colors">Organizers</a></li>
             </ul>
           </div>
@@ -93,18 +93,20 @@ export default function Footer({ onRegisterClick }: FooterProps) {
               <h4 className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-2">
                 Contact
               </h4>
-              <ul className="space-y-1.5 text-xs text-slate-400">
+              <ul className="space-y-2 text-xs text-slate-400">
                 <li>
-                  <span className="text-[#FAF6F0]/70">Sandra Biju</span>
-                  <a href="tel:+919447051746" className="block hover:text-white transition-colors">+91 94470 51746</a>
+                  <span className="text-[#FAF6F0]/80 font-semibold">Tims:</span>{" "}
+                  <a href="tel:+919946116910" className="hover:text-white transition-colors">+91 99461 16910</a>
                 </li>
                 <li>
-                  <span className="text-[#FAF6F0]/70">Lena Annette Wilson</span>
-                  <a href="tel:+917907181525" className="block hover:text-white transition-colors">+91 79071 81525</a>
+                  <span className="text-[#FAF6F0]/80 font-semibold">Arjun:</span>{" "}
+                  <a href="tel:+919400279959" className="hover:text-white transition-colors">+91 9400279959</a>
                 </li>
-                <li>
-                  <span className="text-[#FAF6F0]/70">Arjun Anil</span>
-                  <a href="tel:+917012087830" className="block hover:text-white transition-colors">+91 70120 87830</a>
+                <li className="pt-2">
+                  <span className="text-[10px] font-black uppercase tracking-widest text-slate-400 block mb-1">Mail</span>
+                  <a href="mailto:ieee@sjcetpalai.ac.in" className="text-[#E8C5A8] hover:text-white transition-colors underline-offset-2 hover:underline">
+                    ieee@sjcetpalai.ac.in
+                  </a>
                 </li>
               </ul>
             </div>
@@ -113,8 +115,8 @@ export default function Footer({ onRegisterClick }: FooterProps) {
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-[11px] text-slate-600">
-          <span>© 2026 SYNORA · IEEE ComSoc SBC SJCET. All rights reserved.</span>
+        <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-[11px] text-slate-400">
+          <span>© 2026 SYNORA · IEEE SB SJCET · IEEE COMSOC SBC SJCET · IEEE COMSOC KERALA CHAPTER. All rights reserved.</span>
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             className="text-[#A88C78] hover:text-[#E8C5A8] transition-colors flex items-center gap-1"

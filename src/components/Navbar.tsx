@@ -50,25 +50,21 @@ export default function Navbar({ onRegisterClick }: NavbarProps) {
             />
           </div>
 
-          {/* IEEE and STLC Badges */}
-          <div className="hidden sm:flex items-center gap-1.5">
-            {/* White Speech Bubble "IEEE" */}
-            <div className="relative bg-white text-black font-extrabold px-2.5 py-1 rounded-full text-xs tracking-tight shadow-md flex items-center justify-center">
-              <span className="font-heading">IEEE</span>
-              {/* Speech bubble small triangle tail */}
-              <div className="absolute -bottom-1 left-2 w-1.5 h-1.5 bg-white rotate-45" />
-            </div>
-
-            {/* Desert Sand Bubble "STLC / 2026" */}
-            <div className="relative bg-[#E8C5A8] border-2 border-[#2B1408] text-[#2B1408] font-extrabold px-2.5 py-0.5 rounded-full text-xs tracking-wider uppercase shadow-md flex items-center gap-1 group-hover:scale-105 transition-transform">
-              <span className="font-heading font-black">STLC</span>
-              <span className="text-[10px] bg-[#2B1408] text-[#E8C5A8] px-1 py-0.2 rounded font-bold">
-                2026
-              </span>
-              {/* Speech bubble tail */}
-              <div className="absolute -bottom-1 right-2 w-1 h-1 bg-[#E8C5A8] border-r-2 border-b-2 border-[#2B1408] rotate-45" />
-            </div>
+          {/* IEEE ComSoc Kerala Chapter Logo Image */}
+          <div className="hidden sm:flex items-center">
+            <img
+              src="/comsoc-logo.png.png"
+              alt="IEEE ComSoc Kerala Chapter"
+              className="h-7 sm:h-8 md:h-9 w-auto object-contain"
+              onError={(e) => {
+                const target = e.currentTarget;
+                if (target.src.endsWith(".png.png")) {
+                  target.src = "/comsoc-logo.png";
+                }
+              }}
+            />
           </div>
+
         </a>
 
         {/* Center Pill Menu - Desktop */}
@@ -78,18 +74,6 @@ export default function Navbar({ onRegisterClick }: NavbarProps) {
             className="text-[#FAF3E8]/80 hover:text-[#FAF3E8] hover:bg-white/10 px-3.5 py-1.5 rounded-full text-xs font-semibold tracking-wide transition-all"
           >
             About
-          </a>
-          <a
-            href="#experience"
-            className="text-[#FAF3E8]/80 hover:text-[#FAF3E8] hover:bg-white/10 px-3.5 py-1.5 rounded-full text-xs font-semibold tracking-wide transition-all"
-          >
-            Experience
-          </a>
-          <a
-            href="#awaits"
-            className="text-[#FAF3E8]/80 hover:text-[#FAF3E8] hover:bg-white/10 px-3.5 py-1.5 rounded-full text-xs font-semibold tracking-wide transition-all"
-          >
-            Programme
           </a>
           <a
             href="#expo"
@@ -170,20 +154,6 @@ export default function Navbar({ onRegisterClick }: NavbarProps) {
             className="text-[#FAF3E8]/90 hover:text-[#E8C5A8] px-3 py-2 rounded-lg text-sm font-medium transition-colors"
           >
             About
-          </a>
-          <a
-            href="#experience"
-            onClick={() => setMobileMenuOpen(false)}
-            className="text-[#FAF3E8]/90 hover:text-[#E8C5A8] px-3 py-2 rounded-lg text-sm font-medium transition-colors"
-          >
-            Experience
-          </a>
-          <a
-            href="#awaits"
-            onClick={() => setMobileMenuOpen(false)}
-            className="text-[#FAF3E8]/90 hover:text-[#E8C5A8] px-3 py-2 rounded-lg text-sm font-medium transition-colors"
-          >
-            Programme
           </a>
           <a
             href="#expo"
