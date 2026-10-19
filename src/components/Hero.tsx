@@ -121,53 +121,6 @@ export default function Hero({ onRegisterClick }: HeroProps) {
             <span className="absolute bottom-2 right-8 text-[#E56A26] font-light text-2xl select-none hidden sm:block drop-shadow-[0_0_6px_#E56A26]">+</span>
           </div>
 
-          {/* ── FLOATING GLASS CARD 1 (Top-Right: SJCET - IEEE ComSoc) ── */}
-          <div className="absolute -top-3 right-2 sm:right-6 md:right-14 lg:right-20 z-20 transform rotate-6 hover:rotate-1 hover:scale-105 transition-all duration-300">
-            <div className="bg-[#1F0C04]/80 backdrop-blur-md border border-[#FFA366]/30 rounded-2xl p-2 sm:p-2.5 w-28 sm:w-36 md:w-44 shadow-[0_12px_28px_rgba(0,0,0,0.6)] flex flex-col items-center text-center">
-              <div className="w-9 h-9 sm:w-11 sm:h-11 rounded-xl bg-[#0F172A] border border-white/50 p-1 flex items-center justify-center overflow-hidden mb-1 shadow-inner">
-                <svg viewBox="0 0 48 48" className="w-full h-full" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect width="48" height="48" rx="8" fill="#0B132B" />
-                  <rect x="11" y="9" width="26" height="22" rx="4" fill="#F8FAFC" />
-                  <rect x="15" y="15" width="8" height="7" fill="#EF4444" />
-                  <rect x="25" y="15" width="8" height="7" fill="#06B6D4" />
-                  <rect x="23" y="18" width="2" height="2" fill="#0B132B" />
-                  <rect x="17" y="24" width="14" height="2.5" fill="#0B132B" />
-                  <rect x="9" y="32" width="30" height="12" rx="4" fill="#B85D2A" />
-                </svg>
-              </div>
-              <span className="text-[#FAF3E8] font-heading font-black text-[10px] sm:text-xs tracking-tight">
-                SJCET - IEEE ComSoc
-              </span>
-              <span className="text-[#E8C5A8]/80 text-[8px] sm:text-[9.5px] font-medium">
-                Host Chapter 2026
-              </span>
-            </div>
-          </div>
-
-          {/* ── FLOATING GLASS CARD 2 (Center-Left: SYNORA 2026) ── */}
-          <div className="absolute bottom-1 left-2 sm:left-6 md:left-12 lg:left-16 z-20 transform -rotate-6 hover:-rotate-1 hover:scale-105 transition-all duration-300">
-            <div className="bg-[#1F0C04]/80 backdrop-blur-md border border-[#FFA366]/30 rounded-2xl p-2 sm:p-2.5 w-28 sm:w-36 md:w-44 shadow-[0_12px_28px_rgba(0,0,0,0.6)] flex flex-col items-center text-center">
-              <div className="w-9 h-9 sm:w-11 sm:h-11 rounded-xl bg-[#5A2810] border border-white/50 p-1 flex items-center justify-center overflow-hidden mb-1 shadow-inner">
-                <svg viewBox="0 0 48 48" className="w-full h-full" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect width="48" height="48" rx="8" fill="#78350F" />
-                  <circle cx="24" cy="22" r="12" fill="#D97706" />
-                  <circle cx="19" cy="20" r="3.5" fill="#FEF3C7" />
-                  <circle cx="29" cy="20" r="3.5" fill="#FEF3C7" />
-                  <circle cx="20" cy="20" r="1.5" fill="#000" />
-                  <circle cx="30" cy="20" r="1.5" fill="#000" />
-                  <path d="M20 27 C22 29, 26 29, 28 27" stroke="#000" strokeWidth="2" strokeLinecap="round" />
-                  <rect x="13" y="32" width="22" height="12" rx="4" fill="#E8C5A8" />
-                  <circle cx="24" cy="38" r="2.5" fill="#000" />
-                </svg>
-              </div>
-              <span className="text-[#FAF3E8] font-heading font-black text-[10px] sm:text-xs tracking-tight">
-                SYNORA 2026
-              </span>
-              <span className="text-[#E8C5A8]/80 text-[8px] sm:text-[9.5px] font-medium">
-                2-Day Residential
-              </span>
-            </div>
-          </div>
 
           {/* ── LINE 1: #STLC ── */}
           <div className="flex items-center justify-center gap-1 md:gap-2 leading-none relative z-10">
