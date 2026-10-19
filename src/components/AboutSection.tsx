@@ -21,7 +21,7 @@ export default function AboutSection({ onRegisterClick }: AboutSectionProps) {
           </div>
           <div className="bg-[#E8C5A8] border border-[#2B1408]/20 text-[#2B1408] px-4 py-2 rounded-2xl font-bold text-xs md:text-sm inline-flex items-center gap-2 self-start md:self-auto shadow-sm">
             <span className="w-2.5 h-2.5 rounded-full bg-[#2B1408] animate-ping" />
-            SYNORA 2026 • Two-Day Residential
+            SYNORA 2026 • Two-Day Residential Conference
           </div>
         </div>
 

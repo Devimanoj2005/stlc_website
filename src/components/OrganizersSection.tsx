@@ -49,10 +49,7 @@ export default function OrganizersSection() {
               </p>
             </div>
 
-            <div className="mt-8 pt-6 border-t border-[#E2D4C5] flex items-center justify-between">
-              <span className="text-xs font-extrabold text-slate-700">
-                SB Palai, Kerala
-              </span>
+            <div className="mt-8 pt-6 border-t border-[#E2D4C5] flex items-center justify-end">
               <span className="text-xs font-bold text-[#B85D2A] group-hover:underline">
                 Student Branch
               </span>
@@ -87,10 +84,7 @@ export default function OrganizersSection() {
               </p>
             </div>
 
-            <div className="mt-8 pt-6 border-t border-[#E2D4C5] flex items-center justify-between">
-              <span className="text-xs font-extrabold text-slate-700">
-                SBC Palai, Kerala
-              </span>
+            <div className="mt-8 pt-6 border-t border-[#E2D4C5] flex items-center justify-end">
               <span className="text-xs font-bold text-[#B85D2A] group-hover:underline">
                 Student Branch Chapter
               </span>
@@ -101,7 +95,7 @@ export default function OrganizersSection() {
           <div className="bg-[#F4ECE3] border-2 border-[#E2D4C5] hover:border-[#2B1408] rounded-3xl p-6 sm:p-8 transition-all duration-300 hover:shadow-xl flex flex-col justify-between group">
             <div>
               <div className="flex items-center justify-between mb-6">
-                <span className="text-[11px] font-black uppercase tracking-wider bg-[#E8C5A8] text-[#2B1408] px-3 py-1 rounded-full border border-[#2B1408]/20">
+                <span className="text-[11px] font-black uppercase tracking-wider bg-[#B85D2A] text-white px-3 py-1 rounded-full">
                   IN ASSOCIATION WITH
                 </span>
                 <span className="font-mono text-xs font-bold text-[#7A6152]">
@@ -131,10 +125,7 @@ export default function OrganizersSection() {
               </p>
             </div>
 
-            <div className="mt-8 pt-6 border-t border-[#E2D4C5] flex items-center justify-between">
-              <span className="text-xs font-extrabold text-slate-700">
-                Kerala Section
-              </span>
+            <div className="mt-8 pt-6 border-t border-[#E2D4C5] flex items-center justify-end">
               <span className="text-xs font-bold text-[#B85D2A] group-hover:underline">
                 Professional Network
               </span>

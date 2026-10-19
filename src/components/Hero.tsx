@@ -54,7 +54,7 @@ export default function Hero({ onRegisterClick }: HeroProps) {
             IEEE ComSoc SBC SJCET &amp; IEEE ComSoc Kerala Chapter
           </span>
           <span className="text-[#FAF3E8]/35 hidden sm:inline">•</span>
-          <span className="text-[#FFA366] font-semibold hidden sm:inline whitespace-nowrap">2-Day Residential</span>
+          <span className="text-[#FFA366] font-semibold hidden sm:inline whitespace-nowrap">2-Day Residential Conference</span>
         </div>
 
         {/* ── SYNORA EVENT LOGO DISPLAY ── */}
