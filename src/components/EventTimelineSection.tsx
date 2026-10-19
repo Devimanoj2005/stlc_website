@@ -231,7 +231,7 @@ export default function EventTimelineSection() {
           {schedule.map((day) => (
             <div
               key={day.day}
-              className="bg-[#3E1C0D] rounded-3xl p-6 sm:p-8 border border-[#E8C5A8]/10"
+              className="bg-[#3E1C0D] rounded-3xl p-4 sm:p-6 md:p-8 border border-[#E8C5A8]/10"
             >
               {/* Day Header */}
               <div className="flex items-center gap-3 mb-6 sm:mb-8">
@@ -255,8 +255,8 @@ export default function EventTimelineSection() {
                 {day.events.map((event, idx) => (
                   <div key={event.name} className="flex gap-2 sm:gap-3">
                     {/* Left: time label */}
-                    <div className="w-24 sm:w-28 shrink-0 pt-1 text-right">
-                      <span className="text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-[#E8C5A8]/70 block leading-tight">
+                    <div className="w-20 sm:w-28 shrink-0 pt-1 text-right">
+                      <span className="text-[9px] sm:text-[11px] font-bold uppercase tracking-wider text-[#E8C5A8]/70 block leading-tight">
                         {event.time}
                       </span>
                     </div>
@@ -275,7 +275,7 @@ export default function EventTimelineSection() {
                         <div className={`w-6 h-6 sm:w-7 sm:h-7 rounded-lg flex items-center justify-center shrink-0 ${event.highlight ? "bg-[#2B1408] text-[#E8C5A8]" : "bg-[#B85D2A]/20 text-[#E8C5A8]"}`}>
                           {event.icon}
                         </div>
-                        <span className="font-heading font-black text-xs sm:text-[13px] tracking-tight uppercase leading-snug truncate">
+                        <span className="font-heading font-black text-xs sm:text-[13px] tracking-tight uppercase leading-snug">
                           {event.name}
                         </span>
                       </div>
