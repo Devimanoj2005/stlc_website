@@ -4,8 +4,6 @@ import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import AboutSection from "@/components/AboutSection";
-import ExperienceSection from "@/components/ExperienceSection";
-import WhatAwaitsSection from "@/components/WhatAwaitsSection";
 import ProjectExpoSection from "@/components/ProjectExpoSection";
 import WhySTLCSection from "@/components/WhySTLCSection";
 import EventTimelineSection from "@/components/EventTimelineSection";
@@ -36,22 +34,16 @@ export default function Home() {
         {/* 01. ABOUT STLC 2026 */}
         <AboutSection onRegisterClick={() => setIsRegisterOpen(true)} />
 
-        {/* 02. THE STLC EXPERIENCE */}
-        <ExperienceSection />
-
-        {/* 03. WHAT AWAITS YOU */}
-        <WhatAwaitsSection onExploreExpoClick={() => setIsExpoOpen(true)} />
-
-        {/* 04. PROJECT EXPO */}
+        {/* 02. PROJECT EXPO */}
         <ProjectExpoSection onExploreExpoClick={() => setIsExpoOpen(true)} />
 
-        {/* 05. EVENTS */}
+        {/* 03. EVENTS */}
         <WhySTLCSection onRegisterClick={() => setIsRegisterOpen(true)} />
 
-        {/* 06. EVENT TIMELINE */}
+        {/* 04. EVENT TIMELINE */}
         <EventTimelineSection />
 
-        {/* 07. ORGANIZERS */}
+        {/* 05. ORGANIZERS */}
         <OrganizersSection />
       </main>
 

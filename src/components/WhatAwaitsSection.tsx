@@ -110,7 +110,7 @@ export default function WhatAwaitsSection({
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 md:mb-16">
           <div>
             <div className="inline-flex items-center gap-2 bg-[#B85D2A] text-white px-3.5 py-1 rounded-full text-xs font-black uppercase tracking-wider mb-4">
-              <span>03 • EXPLORE THE EXPERIENCE</span>
+              <span>02 • EXPLORE THE EXPERIENCE</span>
             </div>
             <h2 className="font-heading font-black text-3xl sm:text-5xl text-slate-900 tracking-tight uppercase leading-tight">
               What Awaits You
