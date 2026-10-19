@@ -7,7 +7,7 @@ interface WhySTLCSectionProps {
 const events = [
   {
     id: "talk",
-    name: "Talk Session",
+    name: "Talk Sessions",
     description: "Hear from IEEE experts and industry leaders on the latest in tech and communications engineering.",
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -18,7 +18,7 @@ const events = [
   },
   {
     id: "workshop",
-    name: "Workshop",
+    name: "Workshops",
     description: "Move beyond theory with hands-on technical sessions building real, deployable skills.",
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -82,7 +82,20 @@ const events = [
       </svg>
     ),
     dark: false,
-    wide: true,
+  },
+  {
+    id: "networking",
+    name: "Networking",
+    description: "Connect with peers, mentors, and delegates to exchange ideas and build lasting professional bonds.",
+    icon: (
+      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <circle cx="18" cy="5" r="3" strokeWidth={2} />
+        <circle cx="6" cy="12" r="3" strokeWidth={2} />
+        <circle cx="18" cy="19" r="3" strokeWidth={2} />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.59 13.51l6.83 3.98m-.01-10.98l-6.82 3.98" />
+      </svg>
+    ),
+    dark: false,
   },
 ];
 
@@ -101,11 +114,11 @@ export default function WhySTLCSection({ onRegisterClick }: WhySTLCSectionProps)
               What&apos;s On
             </h2>
             <p className="mt-3 text-base sm:text-lg text-[#5A453A] max-w-2xl">
-              Seven curated events packed into two immersive days of learning, connecting, and growing.
+              Eight curated events packed into two immersive days of learning, connecting, and growing.
             </p>
           </div>
           <div className="font-mono text-xs font-bold text-[#8C6854]">
-            [ 7 EVENTS ]
+            [ 8 EVENTS ]
           </div>
         </div>
 
@@ -114,8 +127,7 @@ export default function WhySTLCSection({ onRegisterClick }: WhySTLCSectionProps)
           {events.map((event, index) => (
             <div
               key={event.id}
-              className={`rounded-3xl p-5 sm:p-6 border flex flex-col justify-between transition-all duration-300 hover:shadow-xl hover:-translate-y-1 group
-                ${event.wide ? "sm:col-span-2" : "col-span-1"}
+              className={`rounded-3xl p-5 sm:p-6 border flex flex-col justify-between transition-all duration-300 hover:shadow-xl hover:-translate-y-1 group col-span-1
                 ${event.dark
                   ? "bg-[#3E1C0D] text-[#FAF6F0] border-[#B85D2A]/30 shadow-xl"
                   : event.accent

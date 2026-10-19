@@ -95,11 +95,11 @@ export default function Footer({ onRegisterClick }: FooterProps) {
               </h4>
               <ul className="space-y-2 text-xs text-slate-400">
                 <li>
-                  <span className="text-[#FAF6F0]/80 font-semibold">Tims:</span>{" "}
+                  <span className="text-[#FAF6F0]/80 font-semibold">Tims Tittus:</span>{" "}
                   <a href="tel:+919946116910" className="hover:text-white transition-colors">+91 99461 16910</a>
                 </li>
                 <li>
-                  <span className="text-[#FAF6F0]/80 font-semibold">Arjun:</span>{" "}
+                  <span className="text-[#FAF6F0]/80 font-semibold">Arjun Anil:</span>{" "}
                   <a href="tel:+919400279959" className="hover:text-white transition-colors">+91 9400279959</a>
                 </li>
                 <li className="pt-2">

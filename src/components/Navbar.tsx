@@ -50,21 +50,6 @@ export default function Navbar({ onRegisterClick }: NavbarProps) {
             />
           </div>
 
-          {/* IEEE ComSoc Kerala Chapter Logo Image */}
-          <div className="hidden sm:flex items-center">
-            <img
-              src="/comsoc-logo.png.png"
-              alt="IEEE ComSoc Kerala Chapter"
-              className="h-7 sm:h-8 md:h-9 w-auto object-contain"
-              onError={(e) => {
-                const target = e.currentTarget;
-                if (target.src.endsWith(".png.png")) {
-                  target.src = "/comsoc-logo.png";
-                }
-              }}
-            />
-          </div>
-
         </a>
 
         {/* Center Pill Menu - Desktop */}

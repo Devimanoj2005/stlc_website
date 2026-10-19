@@ -18,11 +18,49 @@ export default function OrganizersSection() {
           </p>
         </div>
 
-        {/* Two Main Organizer Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        {/* Three Main Organizer Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto">
+
+          {/* IEEE SB SJCET Card */}
+          <div className="bg-[#F4ECE3] border-2 border-[#E2D4C5] hover:border-[#2B1408] rounded-3xl p-6 sm:p-8 transition-all duration-300 hover:shadow-xl flex flex-col justify-between group">
+            <div>
+              <div className="flex items-center justify-between mb-6">
+                <span className="text-[11px] font-black uppercase tracking-wider bg-[#B85D2A] text-white px-3 py-1 rounded-full">
+                  ORGANIZED BY
+                </span>
+                <span className="font-mono text-xs font-bold text-[#7A6152]">
+                  Student Branch
+                </span>
+              </div>
+
+              <div className="h-16 w-fit bg-[#2B1408] border border-[#FAF3E8]/10 rounded-2xl px-4 py-2 flex items-center justify-center mb-6 shadow-sm group-hover:scale-105 transition-transform">
+                <img
+                  src="/ieeesb logo white.png"
+                  alt="IEEE SB SJCET"
+                  className="h-10 w-auto object-contain"
+                />
+              </div>
+
+              <h3 className="font-heading font-black text-2xl text-slate-900 tracking-tight uppercase">
+                IEEE SB SJCET
+              </h3>
+              <p className="text-xs font-bold text-[#B85D2A] uppercase tracking-wider mt-1">
+                St. Joseph&apos;s College of Engineering & Technology, Palai
+              </p>
+            </div>
+
+            <div className="mt-8 pt-6 border-t border-[#E2D4C5] flex items-center justify-between">
+              <span className="text-xs font-extrabold text-slate-700">
+                SB Palai, Kerala
+              </span>
+              <span className="text-xs font-bold text-[#B85D2A] group-hover:underline">
+                Student Branch
+              </span>
+            </div>
+          </div>
 
           {/* SJCET Chapter Card */}
-          <div className="bg-[#F4ECE3] border-2 border-[#E2D4C5] hover:border-[#2B1408] rounded-3xl p-8 transition-all duration-300 hover:shadow-xl flex flex-col justify-between group">
+          <div className="bg-[#F4ECE3] border-2 border-[#E2D4C5] hover:border-[#2B1408] rounded-3xl p-6 sm:p-8 transition-all duration-300 hover:shadow-xl flex flex-col justify-between group">
             <div>
               <div className="flex items-center justify-between mb-6">
                 <span className="text-[11px] font-black uppercase tracking-wider bg-[#B85D2A] text-white px-3 py-1 rounded-full">
@@ -47,10 +85,6 @@ export default function OrganizersSection() {
               <p className="text-xs font-bold text-[#B85D2A] uppercase tracking-wider mt-1">
                 St. Joseph&apos;s College of Engineering & Technology, Palai
               </p>
-
-              <p className="mt-4 text-xs sm:text-sm text-[#5A453A] leading-relaxed font-normal">
-                A vibrant student branch chapter dedicated to nurturing student leadership, technical exploration, and community-driven engineering initiatives in Kerala.
-              </p>
             </div>
 
             <div className="mt-8 pt-6 border-t border-[#E2D4C5] flex items-center justify-between">
@@ -64,7 +98,7 @@ export default function OrganizersSection() {
           </div>
 
           {/* Kerala Chapter Card */}
-          <div className="bg-[#F4ECE3] border-2 border-[#E2D4C5] hover:border-[#2B1408] rounded-3xl p-8 transition-all duration-300 hover:shadow-xl flex flex-col justify-between group">
+          <div className="bg-[#F4ECE3] border-2 border-[#E2D4C5] hover:border-[#2B1408] rounded-3xl p-6 sm:p-8 transition-all duration-300 hover:shadow-xl flex flex-col justify-between group">
             <div>
               <div className="flex items-center justify-between mb-6">
                 <span className="text-[11px] font-black uppercase tracking-wider bg-[#E8C5A8] text-[#2B1408] px-3 py-1 rounded-full border border-[#2B1408]/20">
@@ -94,10 +128,6 @@ export default function OrganizersSection() {
               </h3>
               <p className="text-xs font-bold text-[#5A453A] uppercase tracking-wider mt-1">
                 IEEE Communications Society, Kerala Section
-              </p>
-
-              <p className="mt-4 text-xs sm:text-sm text-[#5A453A] leading-relaxed font-normal">
-                The apex regional professional body for telecommunications, wireless, and computing engineers, empowering researchers and youth across Kerala.
               </p>
             </div>
 
