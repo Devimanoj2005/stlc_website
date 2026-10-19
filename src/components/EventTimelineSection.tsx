@@ -1,6 +1,22 @@
 "use client";
 
-const schedule = [
+import React from "react";
+
+interface TimelineEvent {
+  time: string;
+  name: string;
+  tag: string;
+  icon: React.ReactNode;
+  highlight?: boolean;
+}
+
+interface DaySchedule {
+  day: string;
+  label: string;
+  events: TimelineEvent[];
+}
+
+const schedule: DaySchedule[] = [
   {
     day: "DAY ONE",
     label: "Day 1",
