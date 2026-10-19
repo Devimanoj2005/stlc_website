@@ -93,7 +93,7 @@ export default function Footer({ onRegisterClick }: FooterProps) {
                   </svg>
                 </div>
                 <div>
-                  <span className="text-[#FAF6F0]/80 font-semibold">Tims:</span>{" "}
+                  <span className="text-[#FAF6F0]/80 font-semibold">Tims Tittus:</span>{" "}
                   <a href="tel:+919946116910" className="hover:text-white transition-colors">+91 99461 16910</a>
                 </div>
               </li>
@@ -104,7 +104,7 @@ export default function Footer({ onRegisterClick }: FooterProps) {
                   </svg>
                 </div>
                 <div>
-                  <span className="text-[#FAF6F0]/80 font-semibold">Arjun:</span>{" "}
+                  <span className="text-[#FAF6F0]/80 font-semibold">Arjun Anil:</span>{" "}
                   <a href="tel:+919400279959" className="hover:text-white transition-colors">+91 94002 79959</a>
                 </div>
               </li>
