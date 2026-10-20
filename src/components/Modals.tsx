@@ -45,13 +45,10 @@ const SJCET_FIRST_YEAR_INSTRUCTIONS = [
 ];
 // ─────────────────────────────────────────────────────────────────────────────
 
-function redirectToSnapticks(onError: () => void) {
-  const url = process.env.NEXT_PUBLIC_SNAPTICKS_REGISTRATION_URL;
-  if (!url || !url.startsWith("http")) {
-    onError();
-    return;
-  }
-  window.open(url, "_blank", "noopener,noreferrer");
+const SNAPTICKS_URL = "https://discover.snaptiqz.com/event/synora";
+
+function redirectToSnapticks() {
+  window.open(SNAPTICKS_URL, "_blank", "noopener,noreferrer");
 }
 
 export default function Modals({
@@ -65,7 +62,6 @@ export default function Modals({
   const [college, setCollege] = useState<College | null>(null);
   const [year, setYear] = useState<Year | null>(null);
   const [agreed, setAgreed] = useState(false);
-  const [urlError, setUrlError] = useState(false);
 
   // Reset all state when the modal is closed
   useEffect(() => {
@@ -74,26 +70,24 @@ export default function Modals({
       setCollege(null);
       setYear(null);
       setAgreed(false);
-      setUrlError(false);
     }
   }, [isRegisterOpen]);
 
   // ── Routing logic ─────────────────────────────────────────────────────────
   function handleContinue() {
     if (!college || !year) return;
-    setUrlError(false);
     // Path A: SJCET + 1st Year → instructions step
     if (college === "SJCET" && year === "1st") {
       setRegStep("instructions");
     } else {
       // Path B: every other combination → direct SnapTicks redirect
-      redirectToSnapticks(() => setUrlError(true));
+      redirectToSnapticks();
     }
   }
 
   function handleFinalRegister() {
     if (!agreed) return;
-    redirectToSnapticks(() => setUrlError(true));
+    redirectToSnapticks();
   }
 
   // ── Project Expo modal state ──────────────────────────────────────────────
@@ -162,14 +156,6 @@ export default function Modals({
                   Select your college and year of study to get started.
                 </p>
 
-                {/* URL Error Banner */}
-                {urlError && (
-                  <div className="mb-4 bg-red-900/30 border border-red-500/40 rounded-xl px-4 py-3 text-xs text-red-300 text-center" role="alert">
-                    <span className="font-bold">Registration link not configured.</span>
-                    <br />
-                    Please contact the organisers or try again later.
-                  </div>
-                )}
 
                 {/* ── Field A: College ── */}
                 <div
@@ -296,7 +282,6 @@ export default function Modals({
                   onClick={() => {
                     setRegStep("select");
                     setAgreed(false);
-                    setUrlError(false);
                   }}
                   className="flex items-center gap-1.5 text-[#A88C78] hover:text-[#E8C5A8] text-xs font-semibold transition-colors mb-5 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-[#E8C5A8] rounded"
                   aria-label="Back to college and year selection"
@@ -347,14 +332,6 @@ export default function Modals({
                   ))}
                 </div>
 
-                {/* URL Error Banner */}
-                {urlError && (
-                  <div className="mb-4 bg-red-900/30 border border-red-500/40 rounded-xl px-4 py-3 text-xs text-red-300 text-center" role="alert">
-                    <span className="font-bold">Registration link not configured.</span>
-                    <br />
-                    Please contact the organisers or try again later.
-                  </div>
-                )}
 
                 {/* Agreement Checkbox */}
                 <label className="flex items-start gap-3 cursor-pointer mb-4 group">
@@ -363,7 +340,6 @@ export default function Modals({
                     checked={agreed}
                     onChange={(e) => {
                       setAgreed(e.target.checked);
-                      setUrlError(false);
                     }}
                     className="mt-0.5 w-4 h-4 shrink-0 rounded border-[#B85D2A]/50 bg-[#3E1C0D] text-[#B85D2A] accent-[#B85D2A] cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-[#E8C5A8] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1F0E05]"
                     aria-required="true"
