@@ -67,3 +67,21 @@ body {
 .font-heading {
   font-family: var(--font-syne), var(--font-sans), sans-serif;
 }
+
+/* Themed scrollbar – matches warm mocha palette */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1F0E05;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #B85D2A;
+  border-radius: 99px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #E8C5A8;
+}
