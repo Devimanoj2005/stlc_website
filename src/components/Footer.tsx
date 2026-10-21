@@ -108,6 +108,17 @@ export default function Footer({ onRegisterClick }: FooterProps) {
                   <a href="tel:+919400279959" className="hover:text-white transition-colors">+91 94002 79959</a>
                 </div>
               </li>
+              <li className="flex items-center gap-2.5">
+                <div className="w-7 h-7 rounded-lg bg-[#E56A26]/15 text-[#FFA366] flex items-center justify-center shrink-0">
+                  <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                  </svg>
+                </div>
+                <div>
+                  <span className="text-[#FAF6F0]/80 font-semibold">Abhijith S:</span>{" "}
+                  <a href="tel:+917306289673" className="hover:text-white transition-colors">+91 73062 89673</a>
+                </div>
+              </li>
               <li className="pt-1 flex items-center gap-2.5">
                 <div className="w-7 h-7 rounded-lg bg-[#E56A26]/15 text-[#FFA366] flex items-center justify-center shrink-0">
                   <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
