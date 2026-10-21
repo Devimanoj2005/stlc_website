@@ -11,24 +11,7 @@ interface ModalsProps {
 
 type College = "SJCET" | "Non-SJCET";
 type Year = "1st" | "2nd" | "3rd" | "4th";
-type RegStep = "select" | "instructions";
-
-// ─── SJCET 1st-Year Instructions ─────────────────────────────────────────────
-const SJCET_FIRST_YEAR_INSTRUCTIONS = [
-  {
-    heading: "HOD Permission Required",
-    body: "First-year students of SJCET must obtain permission from their respective HODs to attend SYNORA, as 30 and 31 October are working days.",
-  },
-  {
-    heading: "Attendance Eligibility",
-    body: "Students must ensure that they meet the required attendance percentage to be eligible to attend the event. Obtaining permission from the HOD is the student's own responsibility.",
-  },
-  {
-    heading: "No Refund Policy",
-    body: "Please note: If you register for the event but your HOD does not permit you to attend, the registration fee will not be refunded.",
-  },
-];
-// ─────────────────────────────────────────────────────────────────────────────
+type RegStep = "select" | "sjcet-1st-notice";
 
 const SNAPTICKS_URL = "https://discover.snaptiqz.com/event/synora";
 
@@ -61,18 +44,13 @@ export default function Modals({
   // ── Routing logic ─────────────────────────────────────────────────────────
   function handleContinue() {
     if (!college || !year) return;
-    // Path A: SJCET + 1st Year → instructions step
+    // Path A: SJCET + 1st Year → notice (no payment)
     if (college === "SJCET" && year === "1st") {
-      setRegStep("instructions");
+      setRegStep("sjcet-1st-notice");
     } else {
       // Path B: every other combination → direct SnapTicks redirect
       redirectToSnapticks();
     }
-  }
-
-  function handleFinalRegister() {
-    if (!agreed) return;
-    redirectToSnapticks();
   }
 
   // ── Project Expo modal state ──────────────────────────────────────────────
@@ -250,8 +228,8 @@ export default function Modals({
               </div>
             )}
 
-            {/* ── STEP 2: INSTRUCTIONS (SJCET + 1st Year only) ── */}
-            {regStep === "instructions" && (
+            {/* ── STEP 2: SJCET 1st-Year Notice (no payment) ── */}
+            {regStep === "sjcet-1st-notice" && (
               <div className="p-5 sm:p-8">
                 {/* Close Button */}
                 <button
@@ -264,10 +242,7 @@ export default function Modals({
 
                 {/* Back Button */}
                 <button
-                  onClick={() => {
-                    setRegStep("select");
-                    setAgreed(false);
-                  }}
+                  onClick={() => setRegStep("select")}
                   className="flex items-center gap-1.5 text-[#A88C78] hover:text-[#E8C5A8] text-xs font-semibold transition-colors mb-5 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-[#E8C5A8] rounded"
                   aria-label="Back to college and year selection"
                 >
@@ -278,99 +253,53 @@ export default function Modals({
                 </button>
 
                 {/* Badge */}
-                <div className="flex justify-center mb-3">
+                <div className="flex justify-center mb-4">
                   <span className="inline-flex items-center gap-1.5 bg-[#B85D2A]/20 text-[#E8C5A8] border border-[#B85D2A]/30 px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-widest">
                     SJCET · 1st Year
                   </span>
                 </div>
 
-                <h3 className="font-heading font-black text-xl sm:text-2xl text-[#FAF6F0] uppercase tracking-tight text-center leading-tight mb-1">
-                  Before You
-                </h3>
-                <h3 className="font-heading font-black text-xl sm:text-2xl text-[#E8C5A8] uppercase tracking-tight text-center leading-tight mb-3">
-                  Register
-                </h3>
-                <p className="text-sm text-[#A88C78] text-center leading-relaxed mb-6">
-                  Please read the following instructions carefully before proceeding.
-                </p>
-
-                {/* Instructions List */}
-                <div className="space-y-3 mb-6">
-                  {SJCET_FIRST_YEAR_INSTRUCTIONS.map((item, idx) => {
-                    const isWarning = idx === 2; // No-refund policy
-                    return (
-                      <div
-                        key={item.heading}
-                        className={`flex gap-4 rounded-2xl border px-4 py-4 transition-colors ${
-                          isWarning
-                            ? "bg-[#3A0D0D] border-red-700/40 hover:border-red-600/60"
-                            : "bg-[#2B1408] border-[#B85D2A]/25 hover:border-[#B85D2A]/50"
-                        }`}
-                      >
-                        {/* Number / Warning badge */}
-                        <span
-                          className={`shrink-0 w-7 h-7 rounded-full border text-xs font-mono font-bold flex items-center justify-center mt-0.5 ${
-                            isWarning
-                              ? "bg-red-900/40 border-red-600/50 text-red-300"
-                              : "bg-[#B85D2A]/25 border-[#B85D2A]/40 text-[#E8C5A8]"
-                          }`}
-                        >
-                          {isWarning ? "!" : idx + 1}
-                        </span>
-                        <div className="flex-1">
-                          <p
-                            className={`text-[10px] font-mono uppercase tracking-widest mb-1 ${
-                              isWarning
-                                ? "text-red-400/80"
-                                : "text-[#E8C5A8]/60"
-                            }`}
-                          >
-                            {item.heading}
-                          </p>
-                          <p
-                            className={`text-sm leading-relaxed ${
-                              isWarning
-                                ? "text-red-100/90"
-                                : "text-[#FAF6F0]/90"
-                            }`}
-                          >
-                            {item.body}
-                          </p>
-                        </div>
-                      </div>
-                    );
-                  })}
+                {/* Icon */}
+                <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-[#B85D2A]/20 border border-[#B85D2A]/30 flex items-center justify-center mx-auto mb-4">
+                  <svg className="w-6 h-6 sm:w-7 sm:h-7 text-[#E8C5A8]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
                 </div>
 
+                <h3 className="font-heading font-black text-xl sm:text-2xl text-[#FAF6F0] uppercase tracking-tight text-center leading-tight mb-1">
+                  Registration
+                </h3>
+                <h3 className="font-heading font-black text-xl sm:text-2xl text-[#E8C5A8] uppercase tracking-tight text-center leading-tight mb-5">
+                  Closed
+                </h3>
 
-                {/* Agreement Checkbox */}
-                <label className="flex items-start gap-3 cursor-pointer mb-4 group">
-                  <input
-                    type="checkbox"
-                    checked={agreed}
-                    onChange={(e) => {
-                      setAgreed(e.target.checked);
-                    }}
-                    className="mt-0.5 w-4 h-4 shrink-0 rounded border-[#B85D2A]/50 bg-[#3E1C0D] text-[#B85D2A] accent-[#B85D2A] cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-[#E8C5A8] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1F0E05]"
-                    aria-required="true"
-                  />
-                  <span className="text-sm text-[#A88C78] group-hover:text-[#FAF6F0]/80 transition-colors leading-relaxed">
-                    I have read and understood the above instructions and agree to the terms.
-                  </span>
-                </label>
+                {/* Notice Card */}
+                <div className="bg-[#2B1408] border border-[#B85D2A]/30 rounded-2xl px-5 py-5 mb-6 space-y-3">
+                  <div className="flex items-center gap-2 mb-1">
+                    <span className="w-2 h-2 rounded-full bg-[#E8C5A8] animate-pulse shrink-0" />
+                    <p className="text-[10px] font-mono uppercase tracking-widest text-[#E8C5A8]/70">Important Notice</p>
+                  </div>
+                  <p className="text-sm text-[#FAF6F0]/90 leading-relaxed">
+                    As part of the permission process, a{" "}
+                    <span className="text-[#E8C5A8] font-semibold">Google Form</span>{" "}
+                    to collect first-year students&#39; details will be shared in your class groups through our{" "}
+                    <span className="text-[#E8C5A8] font-semibold">Student Branch Ambassadors</span>. Please fill out the form as soon as possible, as it will close shortly.
+                  </p>
+                  <p className="text-sm text-[#FAF6F0]/90 leading-relaxed">
+                    Based on the responses, we will seek permission from the{" "}
+                    <span className="text-[#E8C5A8] font-semibold">HODs and the Principal</span>.
+                    Registration for first-year students will begin{" "}
+                    <span className="text-[#E8C5A8] font-semibold">tomorrow</span>, and only students who receive the necessary permission will be allowed to register for{" "}
+                    <span className="text-[#E8C5A8] font-semibold">SYNORA 2026</span>.
+                  </p>
+                </div>
 
-                {/* Final Register Button */}
+                {/* Close / Acknowledged button */}
                 <button
-                  onClick={handleFinalRegister}
-                  disabled={!agreed}
-                  aria-disabled={!agreed}
-                  className={`w-full font-heading font-black py-2.5 sm:py-3 rounded-full text-xs sm:text-sm uppercase tracking-wider border-2 transition-all ${
-                    agreed
-                      ? "bg-[#E8C5A8] hover:bg-[#DDB896] text-[#2B1408] border-[#2B1408] active:scale-95 cursor-pointer shadow-[0_0_20px_rgba(232,197,168,0.2)]"
-                      : "bg-[#E8C5A8]/20 text-[#A88C78] border-[#A88C78]/20 cursor-not-allowed"
-                  }`}
+                  onClick={onCloseRegister}
+                  className="w-full font-heading font-black py-2.5 sm:py-3 rounded-full text-xs sm:text-sm uppercase tracking-wider border-2 bg-[#E8C5A8] hover:bg-[#DDB896] text-[#2B1408] border-[#2B1408] active:scale-95 cursor-pointer shadow-[0_0_20px_rgba(232,197,168,0.2)] transition-all"
                 >
-                  Continue →
+                  Got It
                 </button>
 
                 <p className="mt-4 text-center text-[10px] text-[#A88C78]/60 font-mono uppercase tracking-wider">
@@ -445,7 +374,7 @@ export default function Modals({
       )}
 
       {/* Suppress unused state warning for expo form (kept for future use) */}
-      {expoSubmitted && expoForm && null}
+      {expoSubmitted && expoForm && agreed && null}
     </>
   );
 }
