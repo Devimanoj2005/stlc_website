@@ -14,33 +14,18 @@ type Year = "1st" | "2nd" | "3rd" | "4th";
 type RegStep = "select" | "instructions";
 
 // ─── SJCET 1st-Year Instructions ─────────────────────────────────────────────
-// TODO: Replace the placeholder content below with the actual SYNORA 2026
-// event-specific rules, eligibility criteria, fees, and deadlines before
-// going to production.
 const SJCET_FIRST_YEAR_INSTRUCTIONS = [
   {
-    heading: "Eligibility",
-    body: "This track is open to 1st-year B.Tech students currently enrolled at SJCET Palai.",
+    heading: "HOD Permission Required",
+    body: "First-year students of SJCET must obtain permission from their respective HODs to attend SYNORA, as 30 and 31 October are working days.",
   },
   {
-    heading: "Registration Fee",
-    body: "[TODO: Confirm the registration fee for SJCET 1st-year participants.]",
+    heading: "Attendance Eligibility",
+    body: "Students must ensure that they meet the required attendance percentage to be eligible to attend the event. Obtaining permission from the HOD is the student's own responsibility.",
   },
   {
-    heading: "Accommodation",
-    body: "[TODO: Confirm accommodation details and arrangements for SJCET 1st-year participants.]",
-  },
-  {
-    heading: "Event Rules",
-    body: "[TODO: List the applicable event rules, code of conduct, and any discipline-specific eligibility restrictions.]",
-  },
-  {
-    heading: "Deadlines",
-    body: "[TODO: Confirm the registration deadline and any payment deadlines.]",
-  },
-  {
-    heading: "Contact",
-    body: "For queries, contact the IEEE ComSoc SBC SJCET organising committee via the official communication channels.",
+    heading: "No Refund Policy",
+    body: "Please note: If you register for the event but your HOD does not permit you to attend, the registration fee will not be refunded.",
   },
 ];
 // ─────────────────────────────────────────────────────────────────────────────
@@ -305,31 +290,56 @@ export default function Modals({
                 <h3 className="font-heading font-black text-xl sm:text-2xl text-[#E8C5A8] uppercase tracking-tight text-center leading-tight mb-3">
                   Register
                 </h3>
-                <p className="text-xs text-[#A88C78] text-center leading-relaxed mb-5">
+                <p className="text-sm text-[#A88C78] text-center leading-relaxed mb-6">
                   Please read the following instructions carefully before proceeding.
                 </p>
 
                 {/* Instructions List */}
-                <div className="space-y-2 mb-5">
-                  {SJCET_FIRST_YEAR_INSTRUCTIONS.map((item, idx) => (
-                    <div
-                      key={item.heading}
-                      className="flex gap-3 bg-[#2B1408] rounded-xl border border-[#B85D2A]/20 px-3.5 py-3 hover:border-[#B85D2A]/40 transition-colors"
-                    >
-                      {/* Number badge */}
-                      <span className="shrink-0 w-5 h-5 rounded-full bg-[#B85D2A]/25 border border-[#B85D2A]/40 text-[#E8C5A8] text-[10px] font-mono font-bold flex items-center justify-center mt-0.5">
-                        {idx + 1}
-                      </span>
-                      <div>
-                        <p className="text-[9px] text-[#E8C5A8]/50 font-mono uppercase tracking-widest mb-0.5">
-                          {item.heading}
-                        </p>
-                        <p className="text-xs text-[#FAF6F0]/90 leading-relaxed">
-                          {item.body}
-                        </p>
+                <div className="space-y-3 mb-6">
+                  {SJCET_FIRST_YEAR_INSTRUCTIONS.map((item, idx) => {
+                    const isWarning = idx === 2; // No-refund policy
+                    return (
+                      <div
+                        key={item.heading}
+                        className={`flex gap-4 rounded-2xl border px-4 py-4 transition-colors ${
+                          isWarning
+                            ? "bg-[#3A0D0D] border-red-700/40 hover:border-red-600/60"
+                            : "bg-[#2B1408] border-[#B85D2A]/25 hover:border-[#B85D2A]/50"
+                        }`}
+                      >
+                        {/* Number / Warning badge */}
+                        <span
+                          className={`shrink-0 w-7 h-7 rounded-full border text-xs font-mono font-bold flex items-center justify-center mt-0.5 ${
+                            isWarning
+                              ? "bg-red-900/40 border-red-600/50 text-red-300"
+                              : "bg-[#B85D2A]/25 border-[#B85D2A]/40 text-[#E8C5A8]"
+                          }`}
+                        >
+                          {isWarning ? "!" : idx + 1}
+                        </span>
+                        <div className="flex-1">
+                          <p
+                            className={`text-[10px] font-mono uppercase tracking-widest mb-1 ${
+                              isWarning
+                                ? "text-red-400/80"
+                                : "text-[#E8C5A8]/60"
+                            }`}
+                          >
+                            {item.heading}
+                          </p>
+                          <p
+                            className={`text-sm leading-relaxed ${
+                              isWarning
+                                ? "text-red-100/90"
+                                : "text-[#FAF6F0]/90"
+                            }`}
+                          >
+                            {item.body}
+                          </p>
+                        </div>
                       </div>
-                    </div>
-                  ))}
+                    );
+                  })}
                 </div>
 
 
@@ -344,8 +354,8 @@ export default function Modals({
                     className="mt-0.5 w-4 h-4 shrink-0 rounded border-[#B85D2A]/50 bg-[#3E1C0D] text-[#B85D2A] accent-[#B85D2A] cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-[#E8C5A8] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1F0E05]"
                     aria-required="true"
                   />
-                  <span className="text-xs text-[#A88C78] group-hover:text-[#FAF6F0]/80 transition-colors leading-relaxed">
-                    I have read and agree to the above instructions and the applicable terms and conditions.
+                  <span className="text-sm text-[#A88C78] group-hover:text-[#FAF6F0]/80 transition-colors leading-relaxed">
+                    I have read and understood the above instructions and agree to the terms.
                   </span>
                 </label>
 
