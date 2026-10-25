@@ -209,49 +209,28 @@ export default function ProjectExpoSection({
                   <span className="w-4 h-4 rounded-full bg-[#E56A26] text-white flex items-center justify-center text-[10px] shrink-0 mt-0.5 font-bold">
                     ✓
                   </span>
-                  <span>Participation is open to both SYNORA participants and non-participants.</span>
+                  <span>Open to SYNORA participants and non-participants.</span>
                 </li>
 
                 <li className="flex items-start gap-2.5">
                   <span className="w-4 h-4 rounded-full bg-[#E56A26] text-white flex items-center justify-center text-[10px] shrink-0 mt-0.5 font-bold">
                     ✓
                   </span>
-                  <span>Each team may consist of a maximum of four members.</span>
+                  <span>Maximum 4 members per team.</span>
                 </li>
 
                 <li className="flex items-start gap-2.5">
                   <span className="w-4 h-4 rounded-full bg-[#E56A26] text-white flex items-center justify-center text-[10px] shrink-0 mt-0.5 font-bold">
                     ✓
                   </span>
-                  <span>Registration alone does not guarantee selection for the Project Expo.</span>
+                  <span>Hardware-based projects only; software may support hardware functionality.</span>
                 </li>
 
                 <li className="flex items-start gap-2.5">
                   <span className="w-4 h-4 rounded-full bg-[#E56A26] text-white flex items-center justify-center text-[10px] shrink-0 mt-0.5 font-bold">
                     ✓
                   </span>
-                  <span>Only hardware-based projects will be accepted.</span>
-                </li>
-
-                <li className="flex items-start gap-2.5">
-                  <span className="w-4 h-4 rounded-full bg-[#E56A26] text-white flex items-center justify-center text-[10px] shrink-0 mt-0.5 font-bold">
-                    ✓
-                  </span>
-                  <span>Purely software-based projects are not eligible.</span>
-                </li>
-
-                <li className="flex items-start gap-2.5">
-                  <span className="w-4 h-4 rounded-full bg-[#E56A26] text-white flex items-center justify-center text-[10px] shrink-0 mt-0.5 font-bold">
-                    ✓
-                  </span>
-                  <span>Projects incorporating software as a supporting component are permitted, provided the primary focus remains on hardware.</span>
-                </li>
-
-                <li className="flex items-start gap-2.5">
-                  <span className="w-4 h-4 rounded-full bg-[#E56A26] text-white flex items-center justify-center text-[10px] shrink-0 mt-0.5 font-bold">
-                    ✓
-                  </span>
-                  <span>Preference will be given to projects that offer meaningful solutions to real-world problems.</span>
+                  <span>Projects addressing real-world problems are encouraged.</span>
                 </li>
 
                 <li className="flex items-start gap-2.5">
@@ -259,25 +238,7 @@ export default function ProjectExpoSection({
                     ✓
                   </span>
                   <div className="w-full">
-                    <span>The competition will consist of two stages:</span>
-                    <div className="mt-2 space-y-1.5 pl-1">
-                      <div className="flex items-center gap-2">
-                        <span className="px-2 py-0.5 rounded-md bg-[#F6D5BD] text-[#2B1408] font-mono text-[10px] font-black">
-                          01
-                        </span>
-                        <span className="font-semibold text-slate-800 text-[11px]">
-                          Abstract Screening &amp; Shortlisting
-                        </span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <span className="px-2 py-0.5 rounded-md bg-[#F6D5BD] text-[#2B1408] font-mono text-[10px] font-black">
-                          02
-                        </span>
-                        <span className="font-semibold text-slate-800 text-[11px]">
-                          Project Exhibition &amp; Final Evaluation
-                        </span>
-                      </div>
-                    </div>
+                    <span><span className="font-semibold">Two-Stage Selection:</span> Abstract Screening → Project Exhibition &amp; Final Evaluation.</span>
                   </div>
                 </li>
               </ul>
@@ -341,16 +302,18 @@ export default function ProjectExpoSection({
 
           {/* Centered Buttons */}
           <div className="relative z-10 flex flex-wrap items-center justify-center gap-3">
-            <button
-              onClick={onExploreExpoClick}
+            <a
+              href="https://forms.gle/kx9bipS1SoQkzRtq8"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-[#F8CEB0] hover:bg-[#F5C09B] text-[#2B1408] font-heading font-black px-9 py-3.5 rounded-full text-xs sm:text-sm tracking-wider uppercase shadow-xl hover:scale-105 active:scale-95 transition-all duration-200 border-2 border-[#2B1408] inline-flex items-center gap-2 cursor-pointer"
             >
               <span>Submit Now</span>
               <span className="text-base leading-none">→</span>
-            </button>
+            </a>
 
             <a
-              href="https://drive.google.com/file/d/1tEGeEfOEEJVMwRdlByApqYHThNH9IbQh/view?usp=sharing"
+              href="https://drive.google.com/file/d/1Pmi-0aWhIuHKWVCuNJTgqDF1K2hzPl82/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#1A0A04]/90 hover:bg-[#34180A] text-[#FAF6F0] font-heading font-bold px-6 py-3.5 rounded-full text-xs sm:text-sm tracking-wider uppercase shadow-md border border-[#B85D2A]/60 hover:border-[#E8C5A8] hover:scale-105 active:scale-95 transition-all duration-200 inline-flex items-center gap-2"
